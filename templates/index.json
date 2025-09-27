@@ -241,7 +241,7 @@
         "full_width": true,
         "content_width": "small",
         "text_position": "center",
-        "background": "",
+        "background": "#ffffff",
         "background_gradient": "",
         "text_color": ""
       }
@@ -304,7 +304,7 @@
         "richtext_R3MTWJ": {
           "type": "richtext",
           "settings": {
-            "content": "<p>Un corretto sostegno è essenziale per prevenire <strong>dolori e tensioni</strong>, permettendoti di svegliarti riposato e senza rigidità. Mantenendo un <strong>allineamento ottimale</strong>, Cervium™ riduce lo <strong>sforzo sul collo</strong> e aiuta a prevenire <strong>problemi posturali a lungo termine</strong>. È un <strong>elemento fondamentale</strong> per una <strong>routine di sonno più salutare</strong>, favorendo un riposo davvero rigenerante.</p>"
+            "content": "<p>Un corretto sostegno è essenziale per prevenire <strong>dolori e tensioni</strong>, permettendoti di svegliarti riposato e senza rigidità.</p><p> Mantenendo un <strong>allineamento ottimale</strong>, Cervium™ riduce lo <strong>sforzo sul collo</strong> e aiuta a prevenire <strong>problemi posturali a lungo termine</strong>. </p><p>È un <strong>elemento fondamentale</strong> per una <strong>routine di sonno più salutare</strong>, favorendo un riposo davvero rigenerante.</p>"
           }
         }
       },

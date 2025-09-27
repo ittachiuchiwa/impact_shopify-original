@@ -882,10 +882,11 @@
         "item_JXLHGE": {
           "type": "item",
           "settings": {
+            "image": "shopify://shop_images/27_4c149a63-5095-4e3d-a8b7-c84a1e3edc7b_2.png",
             "column_size": "3",
-            "title": "Column title",
+            "title": "Dormitori sulla Schiena",
             "heading_tag": "h4",
-            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "content": "<p>Posiziona semplicemente la tua testa al centro della Cervium™ ultra-morbido. La tua nuca è perfettamente sostenuta, le tue vertebre cervicali riallineate.</p><p><strong>Risultato:</strong> risvegli senza rigidità, colonna rilassata, miglior postura nel lungo termine.<br/></p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"

@@ -11,17 +11,6 @@
   "sections": {
     "image_with_text_overlay_BEF8MD": {
       "type": "image-with-text-overlay",
-      "blocks": {
-        "richtext_C7QYUt": {
-          "type": "richtext",
-          "settings": {
-            "content": ""
-          }
-        }
-      },
-      "block_order": [
-        "richtext_C7QYUt"
-      ],
       "name": "Image with text overlay",
       "settings": {
         "full_width": true,
@@ -34,6 +23,74 @@
         "text_color": "#ffffff",
         "overlay_color": "#000000",
         "overlay_opacity": 0
+      }
+    },
+    "custom_liquid_BUrR3W": {
+      "type": "custom-liquid",
+      "name": "Custom Liquid",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": true,
+        "remove_horizontal_spacing": true,
+        "liquid": "<style>\n    * {\n        margin: 0;\n        padding: 0;\n        box-sizing: border-box;\n    }\n\n    .marquee-container {\n        background: #303D66;\n        padding: 0;\n        overflow: hidden;\n        position: relative;\n        width: 100%;\n    }\n\n    .marquee-header {\n        text-align: center;\n        padding: 20px 0 10px 0;\n    }\n\n    .trust-text {\n        color: white;\n        font-size: 18px;\n        font-weight: 400;\n        letter-spacing: 0.5px;\n        margin: 0;\n    }\n\n    .marquee-content {\n        display: flex;\n        animation: scroll 30s linear infinite;\n        width: max-content;\n        padding: 20px 0 25px 0;\n    }\n\n    .marquee-item {\n        display: flex;\n        align-items: center;\n        margin: 0 60px;\n        white-space: nowrap;\n    }\n\n    .magazine-name {\n        color: white;\n        font-size: 40px;\n        font-weight: bold;\n    }\n\n    .benessere {\n        font-style: italic;\n        font-weight: 300;\n        font-family: 'Georgia', serif;\n    }\n\n    .benessere::after {\n        content: '*';\n        font-size: 20px;\n        vertical-align: super;\n        font-weight: 400;\n    }\n\n    .starbene {\n        font-family: 'Georgia', 'Times New Roman', serif;\n        font-style: italic;\n        font-weight: 400;\n    }\n\n    .altra-medicina {\n        font-family: 'Arial Black', Arial, sans-serif;\n        font-weight: 900;\n        display: flex;\n        flex-direction: column;\n        line-height: 0.85;\n    }\n\n    .altra-top {\n        display: block;\n        font-size: 32px;\n    }\n\n    .altra-bottom {\n        display: block;\n        font-size: 32px;\n    }\n\n    .medicina-small {\n        font-size: 14px;\n        font-weight: 900;\n        display: inline;\n        margin-left: 3px;\n    }\n\n    .salute {\n        font-family: 'Arial Black', Arial, sans-serif;\n        font-weight: 900;\n        font-size: 48px;\n        display: flex;\n        flex-direction: column;\n        line-height: 1;\n    }\n\n    .magazine-subtitle {\n        font-size: 11px;\n        font-weight: 600;\n        letter-spacing: 2px;\n        display: block;\n        margin-top: 2px;\n    }\n\n    @keyframes scroll {\n        0% {\n            transform: translateX(0);\n        }\n        100% {\n            transform: translateX(-50%);\n        }\n    }\n</style>\n\n<div class=\"marquee-container\">\n    <div class=\"marquee-header\">\n        <p class=\"trust-text\">Di fiducia da</p>\n    </div>\n    <div class=\"marquee-content\">\n        <!-- First set -->\n        <div class=\"marquee-item\">\n            <span class=\"magazine-name benessere\">BenEssere</span>\n        </div>\n        \n        <div class=\"marquee-item\">\n            <span class=\"magazine-name starbene\">Starbene</span>\n        </div>\n        \n        <div class=\"marquee-item\">\n            <span class=\"magazine-name altra-medicina\">\n                <span class=\"altra-top\">L'altra</span>\n                <span class=\"altra-bottom\">medicina<span class=\"medicina-small\">PLUS</span></span>\n            </span>\n        </div>\n        \n        <div class=\"marquee-item\">\n            <span class=\"magazine-name salute\">\n                Salute è\n                <span class=\"magazine-subtitle\">MAGAZINE</span>\n            </span>\n        </div>\n\n        <!-- Duplicate set for seamless loop -->\n        <div class=\"marquee-item\">\n            <span class=\"magazine-name benessere\">BenEssere</span>\n        </div>\n        \n        <div class=\"marquee-item\">\n            <span class=\"magazine-name starbene\">Starbene</span>\n        </div>\n        \n        <div class=\"marquee-item\">\n            <span class=\"magazine-name altra-medicina\">\n                <span class=\"altra-top\">L'altra</span>\n                <span class=\"altra-bottom\">medicina<span class=\"medicina-small\">PLUS</span></span>\n            </span>\n        </div>\n        \n        <div class=\"marquee-item\">\n            <span class=\"magazine-name salute\">\n                Salute è\n                <span class=\"magazine-subtitle\">MAGAZINE</span>\n            </span>\n        </div>\n\n        <!-- Third set -->\n        <div class=\"marquee-item\">\n            <span class=\"magazine-name benessere\">BenEssere</span>\n        </div>\n        \n        <div class=\"marquee-item\">\n            <span class=\"magazine-name starbene\">Starbene</span>\n        </div>\n        \n        <div class=\"marquee-item\">\n            <span class=\"magazine-name altra-medicina\">\n                <span class=\"altra-top\">L'altra</span>\n                <span class=\"altra-bottom\">medicina<span class=\"medicina-small\">PLUS</span></span>\n            </span>\n        </div>\n        \n        <div class=\"marquee-item\">\n            <span class=\"magazine-name salute\">\n                Salute è\n                <span class=\"magazine-subtitle\">MAGAZINE</span>\n            </span>\n        </div>\n    </div>\n</div>",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "logo_list_ygNLdq": {
+      "type": "logo-list",
+      "blocks": {
+        "logo_zicDty": {
+          "type": "logo",
+          "settings": {
+            "logo_width": 120,
+            "link": ""
+          }
+        },
+        "logo_nzffmE": {
+          "type": "logo",
+          "settings": {
+            "logo_width": 120,
+            "link": ""
+          }
+        },
+        "logo_UwnVcC": {
+          "type": "logo",
+          "settings": {
+            "logo_width": 120,
+            "link": ""
+          }
+        },
+        "logo_zBkFxM": {
+          "type": "logo",
+          "settings": {
+            "logo_width": 120,
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "logo_zicDty",
+        "logo_nzffmE",
+        "logo_UwnVcC",
+        "logo_zBkFxM"
+      ],
+      "name": "Logo list",
+      "settings": {
+        "full_width": true,
+        "stack_mobile": true,
+        "title": "Di fiducia da",
+        "content": "",
+        "text_alignment": "center",
+        "items_per_row": 5,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "logo_item_background": "",
+        "logo_item_border": ""
       }
     },
     "image-link-blocks": {
@@ -732,6 +789,8 @@
   },
   "order": [
     "image_with_text_overlay_BEF8MD",
+    "custom_liquid_BUrR3W",
+    "logo_list_ygNLdq",
     "image-link-blocks",
     "scrolling-text",
     "collection-list",

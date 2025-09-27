@@ -8,10 +8,7 @@ For inquiries or permissions, contact daniel@section.store
 ---------------------------------------------------------
 {% endcomment %}
 
-<link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
 
 {%- liquid 
   assign padding_horizontal = section.settings.padding_horizontal
@@ -36,27 +33,46 @@ For inquiries or permissions, contact daniel@section.store
   assign heading_font = section.settings.heading_font
   assign heading_height = section.settings.heading_height
   assign heading_align = section.settings.heading_align
-  assign heading_align_mobile = section.settings.heading_align_mobile
 
-  assign sub_heading = section.settings.sub_heading
-  assign sub_heading_size = section.settings.sub_heading_size
-  assign sub_heading_size_mobile = section.settings.sub_heading_size_mobile
-  assign sub_heading_color = section.settings.sub_heading_color
-  assign sub_heading_custom = section.settings.sub_heading_custom
-  assign sub_heading_font = section.settings.sub_heading_font
-  assign sub_heading_height = section.settings.sub_heading_height
-  assign sub_heading_align = section.settings.sub_heading_align
-  assign sub_heading_align_mobile = section.settings.sub_heading_align_mobile
-  assign sub_heading_mt = section.settings.sub_heading_mt
+  assign rating_text = section.settings.rating_text
+  assign rating_text_size = section.settings.rating_text_size
+  assign rating_text_size_mobile = section.settings.rating_text_size_mobile
+  assign rating_text_color = section.settings.rating_text_color
+  assign rating_text_custom = section.settings.rating_text_custom
+  assign rating_text_font = section.settings.rating_text_font
+  assign rating_text_height = section.settings.rating_text_height
+  assign rating_text_mt = section.settings.rating_text_mt
+  assign rating_text_hide = section.settings.rating_text_hide
 
+  assign rating_hide = section.settings.rating_hide
+  assign rating = section.settings.rating
+  assign rating_align = section.settings.rating_align
+
+  assign stars_align = section.settings.stars_align
+  assign stars_icon = section.settings.stars_icon
+  assign stars_color = section.settings.stars_color
+  assign stars_bg_color = section.settings.stars_bg_color
+  assign stars_size = section.settings.stars_size
+  assign stars_size_mobile = section.settings.stars_size_mobile
+  assign stars_count = section.settings.stars_count
+
+  assign text = section.settings.text
+  assign text_size = section.settings.text_size
+  assign text_size_mobile = section.settings.text_size_mobile
+  assign text_color = section.settings.text_color
+  assign text_custom = section.settings.text_custom
+  assign text_font = section.settings.text_font
+  assign text_height = section.settings.text_height
+  assign text_align = section.settings.text_align
+  assign text_mt = section.settings.text_mt
+  assign text_right_image = section.settings.text_right_image
+
+  assign slider_width = section.settings.slider_width
   assign slider_view = section.settings.slider_view
   assign slider_view_mobile = section.settings.slider_view_mobile
   assign slider_gap = section.settings.slider_gap
   assign slider_gap_mobile = section.settings.slider_gap_mobile
   assign slider_mt = section.settings.slider_mt
-
-  assign autoplay = section.settings.autoplay
-  assign autoplay_delay = section.settings.autoplay_delay
 
   assign card_padding_vertical = section.settings.card_padding_vertical
   assign card_padding_vertical_mobile = section.settings.card_padding_vertical_mobile
@@ -68,64 +84,48 @@ For inquiries or permissions, contact daniel@section.store
   assign card_bg_color = section.settings.card_bg_color
   assign card_shadow = section.settings.card_shadow
   assign card_shadow_color = section.settings.card_shadow_color
-  assign card_bg_gradient = section.settings.card_bg_gradient
 
-  assign media_border_color = section.settings.media_border_color
-  assign media_border_thickness = section.settings.media_border_thickness
-  assign media_radius = section.settings.media_radius
-  assign media_ratio = section.settings.media_ratio
-  assign media_ratio_mobile = section.settings.media_ratio_mobile
+  assign card_heading_size = section.settings.card_heading_size
+  assign card_heading_size_mobile = section.settings.card_heading_size_mobile
+  assign card_heading_color = section.settings.card_heading_color
+  assign card_heading_custom = section.settings.card_heading_custom
+  assign card_heading_font = section.settings.card_heading_font
+  assign card_heading_height = section.settings.card_heading_height
+  assign card_heading_align = section.settings.card_heading_align
+  assign card_heading_mt = section.settings.card_heading_mt
 
-  assign btn_icon = section.settings.btn_icon
-  assign btn_icon_size = section.settings.btn_icon_size
-  assign btn_icon_size_mobile = section.settings.btn_icon_size_mobile
-  assign video_icon_bg_color = section.settings.video_icon_bg_color
-  assign video_icon_color = section.settings.video_icon_color
+  assign card_text_size = section.settings.card_text_size
+  assign card_text_size_mobile = section.settings.card_text_size_mobile
+  assign card_text_color = section.settings.card_text_color
+  assign card_text_custom = section.settings.card_text_custom
+  assign card_text_font = section.settings.card_text_font
+  assign card_text_height = section.settings.card_text_height
+  assign card_text_align = section.settings.card_text_align
+  assign card_text_mt = section.settings.card_text_mt
+  assign card_text_more = section.settings.card_text_more
+  assign card_text_less = section.settings.card_text_less
+  assign card_count_words = section.settings.card_count_words
 
-  assign stars_icon = section.settings.stars_icon
-  assign stars_size = section.settings.stars_size
-  assign stars_color = section.settings.stars_color
-  assign stars_align_mobile = section.settings.stars_align_mobile
-  assign stars_align = section.settings.stars_align
-  assign stars_mt = section.settings.stars_mt
+  assign card_author_date_text_size = section.settings.card_author_date_text_size
+  assign card_author_date_text_size_mobile = section.settings.card_author_date_text_size_mobile
+  assign card_author_date_text_color = section.settings.card_author_date_text_color
+  assign card_author_date_text_custom = section.settings.card_author_date_text_custom
+  assign card_author_date_text_font = section.settings.card_author_date_text_font
+  assign card_author_date_text_height = section.settings.card_author_date_text_height
+  assign card_author_date_text_align = section.settings.card_author_date_text_align
+  assign card_author_date_text_mt = section.settings.card_author_date_text_mt
 
-  assign content_padding_vertical = section.settings.content_padding_vertical
-  assign content_padding_vertical_mobile = section.settings.content_padding_vertical_mobile
-  assign content_padding_horizontal = section.settings.content_padding_horizontal
-  assign content_padding_horizontal_mobile = section.settings.content_padding_horizontal_mobile
-  assign hide_content = section.settings.hide_content
-
-  assign text_size = section.settings.text_size
-  assign text_size_mobile = section.settings.text_size_mobile
-  assign text_color = section.settings.text_color
-  assign text_custom = section.settings.text_custom
-  assign text_font = section.settings.text_font
-  assign text_height = section.settings.text_height
-  assign text_mt = section.settings.text_mt
-  assign text_align_mobile = section.settings.text_align_mobile
-  assign text_align = section.settings.text_align
-
-  assign author_size = section.settings.author_size
-  assign author_size_mobile = section.settings.author_size_mobile
-  assign author_color = section.settings.author_color
-  assign author_custom = section.settings.author_custom
-  assign author_font = section.settings.author_font
-  assign author_height = section.settings.author_height
-  assign author_mt = section.settings.author_mt
-  assign author_align_mobile = section.settings.author_align_mobile
-  assign author_align = section.settings.author_align
-
-  assign navigation_align_mobile = section.settings.navigation_align_mobile
-  assign navigation_align = section.settings.navigation_align
-  assign navigation_mt = section.settings.navigation_mt
-  assign navigation_gap = section.settings.navigation_gap
-
-  assign arrow_left = section.settings.arrow_left
-  assign arrow_right = section.settings.arrow_right
   assign arrow_size = section.settings.arrow_size
   assign arrow_size_mobile = section.settings.arrow_size_mobile
+  assign arrow_icon_size = section.settings.arrow_icon_size
+  assign arrow_icon_size_mobile = section.settings.arrow_icon_size_mobile
   assign arrow_color = section.settings.arrow_color
   assign arrow_hover_color = section.settings.arrow_hover_color
+  assign arrow_bg_color = section.settings.arrow_bg_color
+  assign arrow_bg_hover_color = section.settings.arrow_bg_hover_color
+  assign arrow_border_thickness = section.settings.arrow_border_thickness
+  assign arrow_border_color = section.settings.arrow_border_color
+  assign arrow_border_hover_color = section.settings.arrow_border_hover_color
   assign arrow_show_desktop = section.settings.arrow_show_desktop
   assign arrow_show_mobile = section.settings.arrow_show_mobile
 
@@ -134,21 +134,48 @@ For inquiries or permissions, contact daniel@section.store
   assign dots_show_desktop = section.settings.dots_show_desktop
   assign dots_show_mobile = section.settings.dots_show_mobile
   assign dots_color = section.settings.dots_color
+
+  assign size = slider_view | modulo: 2
+  assign size_tablet = slider_view | times: 0.5 | round: 0 | modulo: 2
+
+  assign button = section.settings.button
+  assign button_size = section.settings.button_size
+  assign button_size_mobile = section.settings.button_size_mobile
+  assign button_color = section.settings.button_color
+  assign button_hover_color = section.settings.button_hover_color
+  assign button_custom = section.settings.button_custom
+  assign button_font = section.settings.button_font
+  assign button_height = section.settings.button_height
+  assign button_align = section.settings.button_align
+  assign button_url = section.settings.button_url
+  assign button_mt = section.settings.button_mt
+  assign button_padding_vertical = section.settings.button_padding_vertical
+  assign button_padding_horizontal = section.settings.button_padding_horizontal
+  assign button_radius = section.settings.button_radius
+  assign button_border_thickness = section.settings.button_border_thickness
+  assign button_border_color = section.settings.button_border_color
+  assign button_border_hover_color = section.settings.button_border_hover_color
+  assign button_bg_color = section.settings.button_bg_color
+  assign button_bg_hover_color = section.settings.button_bg_hover_color
   
 -%}
 
 {%- style -%}
 
   {{  heading_font | font_face: font_display: 'swap' }}
-  {{  sub_heading_font | font_face: font_display: 'swap' }}
+  {{  rating_text_font | font_face: font_display: 'swap' }}
   {{  text_font | font_face: font_display: 'swap' }}
-  {{  author_font | font_face: font_display: 'swap' }}
+  {{  card_heading_font | font_face: font_display: 'swap' }}
+  {{  card_text_font | font_face: font_display: 'swap' }}
+  {{  card_author_date_text_font | font_face: font_display: 'swap' }}
+  {{  button_font | font_face: font_display: 'swap' }}
   
   .section-{{ section.id }} {
     border-top: solid {{ border_color }} {{ border_thickness }}px;
     border-bottom: solid {{ border_color }} {{ border_thickness }}px;
     margin-top: {{ margin_top | times: 0.75 | round: 0 }}px;
     margin-bottom: {{ margin_bottom | times: 0.75 | round: 0 }}px;
+    overflow: hidden;
   }
   
   .section-{{ section.id }}-settings {
@@ -160,78 +187,65 @@ For inquiries or permissions, contact daniel@section.store
   }
 
   .testimonials-heading-{{ section.id }} {
-    text-align: {{ heading_align_mobile }};
-  }
-
-  .testimonials-heading-{{ section.id }} * {
     margin: 0;
     font-size: {{ heading_size_mobile }}px;
     color: {{ heading_color }};
     line-height: {{ heading_height }}%;
+    text-align: {{ heading_align }};
     text-transform: unset;
-  }
-
-  .testimonials-subheading-{{ section.id }} {
-    margin-top: {{ sub_heading_mt | times: 0.75 | round: 0 }}px;
-    text-align: {{ sub_heading_align_mobile }};
-  }
-
-  .testimonials-subheading-{{ section.id }} * {
-    margin: 0;
-    font-size: {{ sub_heading_size_mobile }}px;
-    color: {{ sub_heading_color }};
-    line-height: {{ sub_heading_height }}%;
-    text-transform: unset;
-  }
-
-  .testimonials-slider-{{ section.id }} {
-    margin-top: {{ slider_mt | times: 0.75 | round: 0 }}px;
-  }
-
-  .testimonials-slider-{{ section.id }} .swiper-wrapper {
-    align-items: stretch !important;
-  }
-
-  .testimonials-slide-{{ section.id }} {
-    display: flex !important;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: {{ card_padding_vertical_mobile }}px {{ card_padding_horizontal_mobile }}px;
-    border-radius: {{ card_radius }}px;
-    border: {{ card_border_thickness }}px solid {{ card_border_color }};
-    background-color: {{ card_bg_color }};
-    box-sizing: border-box !important; 
-    height: auto !important;
-    overflow: hidden;
-  }
-
-  .testimonials-content-{{ section.id }} {
-    padding: {{ content_padding_vertical_mobile }}px {{ content_padding_horizontal_mobile }}px;
-    flex: 1 1 auto;
-    display: flex !important;
-    flex-direction: column;
-    justify-content: space-between;
   }
 
   .testimonials-stars-{{ section.id }} {
-    margin-top: {{ stars_mt | times: 0.75 | round: 0 }}px;
     display: flex;
-    align-items: center;
-    justify-content: {{ stars_align_mobile }};
-    gap: 1px;
+    align-items: end;
+    gap: 5px;
   }
 
   .testimonials-stars-{{ section.id }} svg,
   .testimonials-stars-{{ section.id }} img {
     display: block;
-    width: {{ stars_size }}px;
-    height: {{ stars_size }}px;
+    width: {{ stars_size_mobile }}px;
+    height: {{ stars_size_mobile }}px;
     object-fit: cover;
+  }
+
+  .testimonials-stars-{{ section.id }} svg {
+    background-color: {{ stars_bg_color }}; 
+  }
+
+  .testimonials-rating-{{ section.id }} {
+    margin-top: {{ rating_text_mt | times: 0.75 | round: 0 }}px;
+    display: flex;
+    align-items: center;
+    justify-content: {{ rating_align }};
+    gap: 5px;
+    flex-wrap: wrap;
+  }
+
+  .testimonials-rating-text-{{ section.id }},
+  .testimonials-rating-{{ section.id }} span {
+    margin: 0;
+    font-size: {{ rating_text_size_mobile }}px;
+    color: {{ rating_text_color }};
+    line-height: {{ rating_text_height }}%;
+  }
+
+  .testimonials-rating-{{ section.id }} span {
+    font-size: {{ rating_text_size_mobile | times: 1.25 | round: 0 }}px;
+    font-weight: 700;
+  }
+
+  .testimonials-rating-{{ section.id }} .testimonials-stars-{{ section.id }} {
+    padding-left: 5px;
   }
 
   .testimonials-text-{{ section.id }} {
     margin-top: {{ text_mt | times: 0.75 | round: 0 }}px;
-    text-align: {{ text_align_mobile }};
+    display: flex;
+    align-items: center;
+    justify-content: {{ text_align }};
+    gap: 10px;
+    flex-wrap: wrap;
   }
 
   .testimonials-text-{{ section.id }} * {
@@ -242,130 +256,171 @@ For inquiries or permissions, contact daniel@section.store
     text-transform: unset;
   }
 
-  .testimonials-author-{{ section.id }} {
-    margin-top: {{ author_mt | times: 0.75 | round: 0 }}px;
-    text-align: {{ author_align_mobile }};
+  .testimonials-text-{{ section.id }} strong {
+    text-decoration: underline;
   }
 
-  .testimonials-author-{{ section.id }} * {
-    margin: 0;
-    font-size: {{ author_size_mobile }}px;
-    color: {{ author_color }};
-    line-height: {{ author_height }}%;
-    text-transform: unset;
+  .testimonials-image-{{ section.id }} {
+    width: 100px;
+    height: 32px;
   }
 
-  .testimonials-media-{{ section.id }} {
-    border-radius: {{ media_radius }}px;
-    border: {{ media_border_thickness }}px solid {{ media_border_color }};
-    overflow: hidden;
-    position: relative;
-  }
-
-  .testimonials-media-{{ section.id }} img,
-  .testimonials-media-{{ section.id }} svg,
-  .testimonials-media-{{ section.id }} video,
-  .testimonials-media-{{ section.id }} iframe {
+  .testimonials-image-{{ section.id }} img {
     display: block;
     width: 100%;
     height: 100%;
-    border: 0px;
-    box-shadow: none;
-    object-fit: cover;
+    object-fit: contain;
   }
 
-  .testimonials-media-{{ section.id }} > svg {
-    background-color: #DADADA;
+  .testimonials-slider-wrapper-{{ section.id }} {
+    margin-top: {{ slider_mt | times: 0.75 | round: 0 }}px;
   }
 
-  .testimonials-video-btn-wrapper-{{ section.id }} {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    z-index: 2;
-    pointer-events: all;
-    transition: all 0.25s ease 0s;
+  .testimonials-slider-{{ section.id }} {
+    overflow: visible !important;
   }
 
-  .testimonials-video-btn-wrapper-{{ section.id }}.active {
-    opacity: 0;
-    pointer-events: none;
-    transition: all 0.25s ease 0s;
+  .testimonials-slide-{{ section.id }}.swiper-slide {
+    opacity: 0.5;
+    transition-duration: 250ms;
+    transition-property: transform, opacity;
   }
 
-  .testimonials-video-btn-{{ section.id }} {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: {{ btn_icon_size_mobile }}px;
-    height: {{ btn_icon_size_mobile }}px;
-    border-radius: 50%;
-    cursor: pointer;
-    position: relative;
-    -moz-background-clip: border;
-    -webkit-background-clip: border;
-    background-clip: border-box;
-
-    -moz-background-clip: padding;
-    -webkit-background-clip: padding;
-    background-clip: padding-box;
-
-    -moz-background-clip: content;
-    -webkit-background-clip: content;
-    background-clip: content-box;
-
-    background-color: {{ video_icon_bg_color }};
-    overflow: hidden;
+  .testimonials-slide-{{ section.id }}.swiper-slide-active {
+    opacity: 1;
+    transition-duration: 250ms;
+    transition-property: transform, opacity;
   }
 
-  .testimonials-video-btn-{{ section.id }} img,
-  .testimonials-video-btn-{{ section.id }} svg {
+  .testimonials-slide-{{ section.id }} {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: {{ card_author_date_text_mt | times: 0.75 | round: 0 }}px;
+    padding: {{ card_padding_vertical_mobile }}px {{ card_padding_horizontal_mobile }}px;
+    border-radius: {{ card_radius }}px;
+    border: {{ card_border_thickness }}px solid {{ card_border_color }};
+    background-color: {{ card_bg_color }};
+    box-sizing: border-box !important; 
+    height: auto !important;
+  }
+
+  .testimonials-slide-top-{{ section.id }} .testimonials-stars-{{ section.id }} {
+    justify-content: {{ stars_align }};
+  }
+
+  .testimonials-slide-heading-{{ section.id }} {
+    margin: 0;
+    margin-top: {{ card_heading_mt | times: 0.75 | round: 0 }}px;
+    font-size: {{ card_heading_size_mobile }}px;
+    color: {{ card_heading_color }};
+    line-height: {{ card_heading_height }}%;
+    text-align: {{ card_heading_align }};
+    font-weight: 700;
+    text-transform: unset;
+  }
+
+  .testimonials-slide-text-{{ section.id }} {
+    margin: 0;
+    margin-top: {{ card_text_mt | times: 0.75 | round: 0 }}px;
+    font-size: {{ card_text_size_mobile }}px;
+    color: {{ card_text_color }};
+    line-height: {{ card_text_height }}%;
+    text-align: {{ card_text_align }};
+    text-transform: unset;
+  }
+
+  .testimonials-slide-text-{{ section.id }} span:first-child {
+    display: none;
+  }
+
+  .testimonials-slide-text-small-{{ section.id }}.active {
+    display: none;
+  }
+
+  .testimonials-slide-text-big-{{ section.id }} {
+    display: none;
+  }
+
+  .testimonials-slide-text-big-{{ section.id }}.active {
+    display: inline;
+  }
+
+  .testimonials-slide-text-btn-{{ section.id }} {
     display: block;
-    width: {{ btn_icon_size_mobile | times: 0.5 | round: 0 }}px;
-    height: {{ btn_icon_size_mobile | times: 0.5 | round: 0 }}px;
-    object-fit: cover;
+    max-width: fit-content;
+    width: 100%;
+    background-color: transparent;
+    box-shadow: none;
+    border: 0px;
+    font-size: {{ card_text_size_mobile }}px;
+    line-height: {{ card_text_height }}%;
+    font-weight: 700;
+    margin-top: 10px;
   }
 
-  .testimonials-video-btn-{{ section.id }} svg {
-    margin-left: 2px;
-  }
-
-  .testimonials-navigation-{{ section.id }} {
-    display: flex;
-    align-items: center;
-    gap: {{ navigation_gap | times: 0.75 | round: 0 }}px;
-    margin-top: {{ navigation_mt | times: 0.75 | round: 0 }}px;
-    justify-content: {{ navigation_align_mobile }};
+  .testimonials-slide-author-date-{{ section.id }} {
+    margin: 0;
+    font-size: {{ card_author_date_text_size_mobile }}px;
+    color: {{ card_author_date_text_color }};
+    line-height: {{ card_author_date_text_height }}%;
+    text-align: {{ card_author_date_text_align }};
+    text-transform: unset;
   }
 
   .testimonials-btn-prev-{{ section.id }},
   .testimonials-btn-next-{{ section.id }} {
-    position: static !important;
-    flex: 0 0 {{ arrow_size_mobile }}px;
-    background: transparent;
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    transform: translateY(-50%);
+    width: {{ arrow_size_mobile }}px;
+    height: {{ arrow_size_mobile }}px;
+    border: {{ arrow_border_thickness }}px solid {{ arrow_border_color }};
+    border-radius: 50%;
+    background: {{ arrow_bg_color }};
+    align-items: center;
+    justify-content: center;
     transition: all 0.3s ease 0s;
     cursor: pointer;
     -webkit-appearance: none;
-    border: 0px;
-    box-shadow: none;
-    padding: 0px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,.15);
+  }
+
+  .testimonials-btn-prev-{{ section.id }} {
+    left: 0px !important;
+  }
+
+  .testimonials-btn-next-{{ section.id }} {
+    right: 0px !important;
   }
 
   .testimonials-btn-prev-{{ section.id }} svg,
-  .testimonials-btn-next-{{ section.id }} svg,
-  .testimonials-btn-prev-{{ section.id }} img,
-  .testimonials-btn-next-{{ section.id }} img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
+  .testimonials-btn-next-{{ section.id }} svg {
+    height: {{ arrow_icon_size_mobile }}px;
+    width: {{ arrow_icon_size_mobile }}px;
+  }
+
+  .testimonials-btn-next-{{ section.id }} svg {
+    transform: rotate(180deg);
+    margin-left: 2px;
+  }
+
+  .testimonials-btn-prev-{{ section.id }} svg {
+    margin-left: -2px;
   }
 
   .testimonials-btn-prev-{{ section.id }} svg path,
   .testimonials-btn-next-{{ section.id }} svg path {
     fill: {{ arrow_color }};
     transition: all 0.3s ease 0s;
+  }
+
+  .testimonials-btn-prev-{{ section.id }}:hover ,
+  .testimonials-btn-next-{{ section.id }}:hover {
+    transition: all 0.3s ease 0s;
+    border: {{ arrow_border_thickness }}px solid {{ arrow_border_hover_color }};
+    background: {{ arrow_bg_hover_color }};
   }
 
   .testimonials-btn-prev-{{ section.id }}:hover svg path,
@@ -380,53 +435,52 @@ For inquiries or permissions, contact daniel@section.store
   }
 
   .testimonials-pagination-{{ section.id }} {
+    margin-top: 20px;
     position: static !important;
     width: 100%;
-    max-width: fit-content;
-    display: flex;
-    gap: 5px;
     justify-content: center;
     align-items: center;
   }
 
   .testimonials-pagination-{{ section.id }} .swiper-pagination-bullet {
-    flex: 0 0 {{ dots_size_mobile }}px;
     width: {{ dots_size_mobile }}px;
     height: {{ dots_size_mobile }}px;
-    background-color: transparent !important;
-    transition: all 0.25s ease 0s;
-    border: 1px solid {{ dots_color }} !important;
-    opacity: 1 !important;
+    border: 2px solid {{ dots_color }};
+    background-color: transparent;
+    opacity: 0.6;
   }
 
   .testimonials-pagination-{{ section.id }} .swiper-pagination-bullet.swiper-pagination-bullet-active {
-    background-color: {{ dots_color }} !important;
+    opacity: 1;
+    background-color: {{ dots_color }}
+  }
+
+  .testimonials-btn-{{ section.id }} {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: fit-content;
+    margin: 0;
+    margin-top: {{ button_mt | times: 0.75 | round: 0 }}px;
+    font-size: {{ button_size_mobile }}px;
+    font-weight: 700;
+    color: {{ button_color }};
+    line-height: {{ button_height }}%;
+    text-align: center;
+    text-transform: unset;
+    text-decoration: none;
+    padding: {{ button_padding_vertical | times: 0.75 | round: 0 }}px {{ button_padding_horizontal | times: 0.75 | round: 0 }}px;
+    border-radius: {{ button_radius }}px;
+    border: {{ button_border_thickness }}px solid {{ button_border_color }};
+    background-color: {{ button_bg_color }};
     transition: all 0.25s ease 0s;
   }
 
-  .testimonials-video-{{ section.id }} {
-    position: relative;
-    z-index: 1;
-    height: 100%;
-    width: 100%;
-    cursor: pointer;
-  }
-
-  .testimonials-video-poster-{{ section.id }} {
-    position: absolute;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
-
-  .testimonials-video-poster-with-controls-{{ section.id }}.active {
-    display: none;
-  }
-
-  .testimonials-video-poster-{{ section.id }}.active img {
-    display: none;
+  .testimonials-btn-{{ section.id }}:hover {
+    color: {{ button_hover_color }};
+    border: {{ button_border_thickness }}px solid {{ button_border_hover_color }};
+    background-color: {{ button_bg_hover_color }};
+    transition: all 0.25s ease 0s;
   }
   
   @media(min-width: 1024px) {
@@ -445,88 +499,101 @@ For inquiries or permissions, contact daniel@section.store
     }
 
     .testimonials-heading-{{ section.id }} {
-      text-align: {{ heading_align }};
-    }
-
-    .testimonials-heading-{{ section.id }} * {
       font-size: {{ heading_size }}px;
     }
 
-    .testimonials-subheading-{{ section.id }} {
-      margin-top: {{ sub_heading_mt }}px;
-      text-align: {{ sub_heading_align }};
+    .testimonials-rating-text-{{ section.id }},
+    .testimonials-rating-{{ section.id }} span {
+      font-size: {{ rating_text_size }}px;
     }
 
-    .testimonials-subheading-{{ section.id }} * {
-      font-size: {{ sub_heading_size }}px;
+    .testimonials-rating-{{ section.id }} span {
+      font-size: {{ rating_text_size | times: 1.25 | round: 0 }}px;
     }
 
-    .testimonials-slider-{{ section.id }} {
-      margin-top: {{ slider_mt }}px;
+    .testimonials-stars-{{ section.id }} svg,
+    .testimonials-stars-{{ section.id }} img {
+      width: {{ stars_size }}px;
+      height: {{ stars_size }}px;
     }
 
-    .testimonials-slide-{{ section.id }} {
-      padding: {{ card_padding_vertical }}px {{ card_padding_horizontal }}px;
-    }
-
-    .testimonials-video-btn-{{ section.id }} {
-      width: {{ btn_icon_size }}px;
-      height: {{ btn_icon_size }}px;
-    }
-
-    .testimonials-video-btn-{{ section.id }} img,
-    .testimonials-video-btn-{{ section.id }} svg {
-      display: block;
-      width: {{ btn_icon_size | times: 0.5 | round: 0 }}px;
-      height: {{ btn_icon_size | times: 0.5 | round: 0 }}px;
-    }
-
-    .testimonials-content-{{ section.id }} {
-      padding: {{ content_padding_vertical }}px {{ content_padding_horizontal }}px;
-    }
-
-    .testimonials-stars-{{ section.id }} {
-      margin-top: {{ stars_mt }}px;
-      justify-content: {{ stars_align }};
-    }
-    
     .testimonials-text-{{ section.id }} {
       margin-top: {{ text_mt }}px;
-      text-align: {{ text_align }};
     }
-
+  
     .testimonials-text-{{ section.id }} * {
       font-size: {{ text_size }}px;
     }
 
-    .testimonials-author-{{ section.id }} {
-      margin-top: {{ author_mt }}px;
-      text-align: {{ author_align }};
+    .testimonials-slider-wrapper-{{ section.id }} {
+      margin-top: {{ slider_mt }}px;
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+      max-width: {{ slider_width }}%;
+    }
+    
+    .testimonials-slide-{{ section.id }} {
+      gap: {{ card_author_date_text_mt }}px;
+      padding: {{ card_padding_vertical }}px {{ card_padding_horizontal }}px;
     }
 
-    .testimonials-author-{{ section.id }} * {
-      font-size: {{ author_size }}px;
+    .testimonials-slide-heading-{{ section.id }} {
+      margin-top: {{ card_heading_mt }}px;
+      font-size: {{ card_heading_size }}px;
     }
 
-    .testimonials-navigation-{{ section.id }} {
-      margin-top: {{ navigation_mt }}px;
-      justify-content: {{ navigation_align }};
-      gap: {{ navigation_gap }}px;
+    .testimonials-slide-text-{{ section.id }} {
+      margin-top: {{ card_text_mt }}px;
+      font-size: {{ card_text_size }}px;
+    }
+
+    .testimonials-slide-text-btn-{{ section.id }} {
+      font-size: {{ card_text_size }}px;
+    }
+
+    .testimonials-slide-text-{{ section.id }} span:first-child {
+      display: inline;
+    }
+
+    .testimonials-slide-text-{{ section.id }} span:not(:first-child),
+    .testimonials-slide-text-{{ section.id }} button {
+      display: none;
+    }
+
+    .testimonials-slide-author-date-{{ section.id }} {
+      font-size: {{ card_author_date_text_size }}px;
     }
 
     .testimonials-btn-prev-{{ section.id }},
     .testimonials-btn-next-{{ section.id }} {
-      flex: 0 0 {{ arrow_size }}px;
+      width: {{ arrow_size }}px;
+      height: {{ arrow_size }}px;
     }
 
-    .testimonials-pagination-{{ section.id }} {
-      gap: 10px;
+    .testimonials-btn-prev-{{ section.id }} {
+      left: -{{ arrow_size | times: 0.5 }}px !important;
+    }
+  
+    .testimonials-btn-next-{{ section.id }} {
+      right: -{{ arrow_size | times: 0.5 }}px !important;
+    }
+
+    .testimonials-btn-prev-{{ section.id }} svg,
+    .testimonials-btn-next-{{ section.id }} svg {
+      height: {{ arrow_icon_size }}px;
+      width: {{ arrow_icon_size }}px;
     }
 
     .testimonials-pagination-{{ section.id }} .swiper-pagination-bullet {
       width: {{ dots_size }}px;
-      flex: 0 0 {{ dots_size }}px;
       height: {{ dots_size }}px;
+    }
+
+    .testimonials-btn-{{ section.id }} {
+      margin-top: {{ button_mt }}px;
+      padding: {{ button_padding_vertical }}px {{ button_padding_horizontal }}px;
+      font-size: {{ button_size }}px;
     }
   }
   
@@ -542,7 +609,7 @@ For inquiries or permissions, contact daniel@section.store
 
 {% if heading_custom %}
   <style>
-    .testimonials-heading-{{ section.id }} * {
+    .testimonials-heading-{{ section.id }} {
       font-family: {{ heading_font.family }}, {{ heading_font.fallback_families }};
       font-weight: {{ heading_font.weight }};
       font-style: {{ heading_font.style }};
@@ -550,12 +617,13 @@ For inquiries or permissions, contact daniel@section.store
   </style>
 {% endif %}
 
-{% if sub_heading_custom %}
+{% if rating_text_custom %}
   <style>
-    .testimonials-subheading-{{ section.id }} * {
-      font-family: {{ sub_heading_font.family }}, {{ sub_heading_font.fallback_families }};
-      font-weight: {{ sub_heading_font.weight }};
-      font-style: {{ sub_heading_font.style }};
+    .testimonials-rating-text-{{ section.id }},
+    .testimonials-rating-{{ section.id }} span {
+      font-family: {{ rating_text_font.family }}, {{ rating_text_font.fallback_families }};
+      font-weight: {{ rating_text_font.weight }};
+      font-style: {{ rating_text_font.style }};
     }
   </style>
 {% endif %}
@@ -570,94 +638,43 @@ For inquiries or permissions, contact daniel@section.store
   </style>
 {% endif %}
 
-{% if author_custom %}
+{% if card_heading_custom %}
   <style>
-    .testimonials-author-{{ section.id }} * {
-      font-family: {{ author_font.family }}, {{ author_font.fallback_families }};
-      font-weight: {{ author_font.weight }};
-      font-style: {{ author_font.style }};
+    .testimonials-slide-heading-{{ section.id }} {
+      font-family: {{ card_heading_font.family }}, {{ card_heading_font.fallback_families }};
+      font-weight: {{ card_heading_font.weight }};
+      font-style: {{ card_heading_font.style }};
     }
   </style>
 {% endif %}
 
-{% if card_shadow %}
+{% if card_text_custom %}
   <style>
-    .testimonials-slide-{{ section.id }} {
-      box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+    .testimonials-slide-text-{{ section.id }},
+    .testimonials-slide-text-btn-{{ section.id }} {
+      font-family: {{ card_text_font.family }}, {{ card_text_font.fallback_families }};
+      font-weight: {{ card_text_font.weight }};
+      font-style: {{ card_text_font.style }};
     }
   </style>
 {% endif %}
 
-{% if media_ratio_mobile == "portrait" %}
+{% if button_custom %}
   <style>
-    .testimonials-media-{{ section.id }} {
-     aspect-ratio: 9.6/12; 
-    }
-  </style>
-{% elsif media_ratio_mobile == "big_portrait" %}
-  <style>
-    .testimonials-media-{{ section.id }} {
-     aspect-ratio: 9.6/16; 
-    }
-  </style>
-{% elsif media_ratio_mobile == "landscape" %}
-  <style>
-    .testimonials-media-{{ section.id }}{
-     aspect-ratio: 12/9; 
-    }
-  </style>
-{% elsif media_ratio_mobile == "square" %}
-  <style>
-    .testimonials-media-{{ section.id }} {
-     aspect-ratio: 12/12; 
-    }
-  </style>
-{% else%}
-  <style>
-    .testimonials-media-{{ section.id }} {
-     aspect-ratio: auto; 
+    .testimonials-btn-{{ section.id }} {
+      font-family: {{ button_font.family }}, {{ button_font.fallback_families }};
+      font-weight: {{ button_font.weight }};
+      font-style: {{ button_font.style }};
     }
   </style>
 {% endif %}
 
-{% if media_ratio == "portrait" %}
+{% if card_author_date_text_custom %}
   <style>
-    @media(min-width: 1024px) {
-     .testimonials-media-{{ section.id }} {
-       aspect-ratio: 9.6/12; 
-      } 
-    }
-  </style>
-{% elsif media_ratio == "big_portrait" %}
-  <style>
-    @media(min-width: 1024px) {
-     .testimonials-media-{{ section.id }} {
-       aspect-ratio: 9.6/16; 
-      } 
-    }
-  </style>
-{% elsif media_ratio == "landscape" %}
-  <style>
-    @media(min-width: 1024px) {
-      .testimonials-media-{{ section.id }}{
-       aspect-ratio: 12/9; 
-      }
-    }
-  </style>
-{% elsif media_ratio == "square" %}
-  <style>
-    @media(min-width: 1024px) {
-      .testimonials-media-{{ section.id }} {
-       aspect-ratio: 12/12; 
-      }
-    }
-  </style>
-{% else%}
-  <style>
-    @media(min-width: 1024px) {
-      .testimonials-media-{{ section.id }} {
-       aspect-ratio: auto; 
-      }
+    .testimonials-slide-author-date-{{ section.id }} {
+      font-family: {{ card_author_date_text_font.family }}, {{ card_author_date_text_font.fallback_families }};
+      font-weight: {{ card_author_date_text_font.weight }};
+      font-style: {{ card_author_date_text_font.style }};
     }
   </style>
 {% endif %}
@@ -730,21 +747,116 @@ For inquiries or permissions, contact daniel@section.store
   </style>
 {% endif %}
 
-{% if card_bg_gradient != blank %}
+{% if card_shadow %}
   <style>
     .testimonials-slide-{{ section.id }} {
-      background-image: {{ card_bg_gradient }};
+      box-shadow: 0px 0px 20px 0px {{ card_shadow_color | hex_to_rgba: 0.2 }};
     }
+  </style>
+{% endif %}
+
+{% if card_text_align == "center" %}
+  <style>
+    .testimonials-slide-text-btn-{{ section.id }} {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  </style>
+{% elsif card_text_align == "right" %}
+  <style>
+    .testimonials-slide-text-btn-{{ section.id }} {
+      margin-left: auto;
+    }
+  </style>
+{% endif %}
+
+{% if size_tablet == 0 %}
+  <style>
+    @media(min-width: 768px) {
+      .testimonials-slide-{{ section.id }}.swiper-slide-visible {
+        opacity: 1;
+        transition-duration: 250ms;
+        transition-property: transform, opacity;
+      }
+
+      .testimonials-slide-{{ section.id }}.swiper-slide-visible.swiper-slide-prev {
+        opacity: 0.5;
+        transition-duration: 250ms;
+        transition-property: transform, opacity;
+      }
+    }
+  </style>
+{% else%}
+  <style>
+    @media(min-width: 768px) {
+      .testimonials-slide-{{ section.id }}.swiper-slide-visible.swiper-slide-prev,
+      .testimonials-slide-{{ section.id }}.swiper-slide-visible.swiper-slide-next {
+        opacity: 1;
+        transition-duration: 250ms;
+        transition-property: transform, opacity;
+      }
+    }
+  </style>
+{% endif %}
+
+{% if size == 0 %}
+  <style>
+    @media(min-width: 1024px) {
+      .testimonials-slide-{{ section.id }}.swiper-slide-visible {
+        opacity: 1;
+        transition-duration: 250ms;
+        transition-property: transform, opacity;
+      }
+
+      .testimonials-slide-{{ section.id }}.swiper-slide-visible.swiper-slide-prev {
+        opacity: 0.5;
+        transition-duration: 250ms;
+        transition-property: transform, opacity;
+      }
+    }
+  </style>
+{% else%}
+  <style>
+    @media(min-width: 1024px) {
+      .testimonials-slide-{{ section.id }}.swiper-slide-visible.swiper-slide-prev,
+      .testimonials-slide-{{ section.id }}.swiper-slide-visible.swiper-slide-next {
+        opacity: 1;
+        transition-duration: 250ms;
+        transition-property: transform, opacity;
+      }
+      
+      .testimonials-slide-{{ section.id }}.swiper-slide-visible.swiper-slide-prev {
+        opacity: 1;
+        transition-duration: 250ms;
+        transition-property: transform, opacity;
+      }
+    }
+  </style>
+{% endif %}
+
+{% if button_align == "center" %}
+  <style>
+   .testimonials-btn-{{ section.id }} {
+      margin-left: auto;
+      margin-right: auto;
+    } 
+  </style>
+{% elsif button_align == "right" %}
+  <style>
+   .testimonials-btn-{{ section.id }} {
+      margin-left: auto;
+    } 
   </style>
 {% endif %}
 
 {% comment %} PREVIEW {% endcomment %}
 <style>
-  .testimonials-slider-{{ section.id }}.preview .swiper-wrapper {
+  .testimonials-slider-{{ section.id }}.preview {
     display: flex;
     align-items: center;
     justify-content: space-between;
     overflow: hidden;
+    gap: {{ slider_gap }}px;
   }
 
   .testimonials-slider-{{ section.id }}.preview .testimonials-slide-{{ section.id }} {
@@ -752,353 +864,415 @@ For inquiries or permissions, contact daniel@section.store
   }
 
   .testimonials-slider-{{ section.id }}.preview .testimonials-slide-{{ section.id }}:not(:first-child) {
-    margin-left: {{ slider_gap_mobile }}px;
-  } 
-
-  @media(min-width: 1024px) {
-    .testimonials-slider-{{ section.id }}.preview .testimonials-slide-{{ section.id }}:not(:first-child) {
-      margin-left: {{ slider_gap }}px;
-    } 
-
-    .testimonials-slider-{{ section.id }}.preview .testimonials-slide-{{ section.id }} {
-      width: 18%;
-    }
+    margin-left: {{ slider_gap }}px;
   }
 </style>
 
 <div class="section-{{ section.id }} testimonials-{{ section.id }}" style="background-color:{{ background_color }}; background-image: {{ background_gradient }};">
-    <div class="section-{{ section.id }}-settings">
+    <div class="section-{{ section.id }}-settings ">
       {% if heading != blank %}
-        <div class="testimonials-heading-{{ section.id }}">
-          {{ heading }}
-        </div>
+        <h2 class="testimonials-heading-{{ section.id }}">{{ heading }}</h2>
       {% endif %}
-
-      {% if sub_heading != blank %}
-        <div class="testimonials-subheading-{{ section.id }}">
-          {{ sub_heading }}
-        </div>
-      {% endif %}
-
-      <div class="testimonials-slider-{{ section.id }} swiper preview">
-        <div class="swiper-wrapper">
-          {% for block in section.blocks %}
-            <div class="testimonials-slide-{{ section.id }} swiper-slide">
-              {% unless block.settings.media_style == "none" %}
-                <div class="testimonials-media-{{ section.id }}">
-                  {% if block.settings.media_style == "image" %}
-                    {% if block.settings.image != blank %}
-                      <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt }}" {% if lazy %}loading="lazy"{% endif %}>
-                    {% else %}
-                      {{ 'image' | placeholder_svg_tag }}
-                    {% endif %}
-                  {% elsif block.settings.media_style == "video" %}
-
-                    <div class="testimonials-video-btn-element testimonials-video-btn-wrapper-{{ section.id }}">
-                      <div id="testimonials-btn-first" class="testimonials-video-btn-{{ section.id }}">
-                        {% if btn_icon != blank %}
-                          <img src="{{ btn_icon | image_url: width: 800 }}" alt="">
-                        {% else %}
-                          <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 520 520">
-                            <g id="Group_858" data-name="Group 858" transform="translate(2542 24333)">
-                              <rect id="Rectangle_1685" data-name="Rectangle 1685" width="520" height="520" transform="translate(-2542 -24333)" fill="{{ video_icon_bg_color }}"></rect>
-                              <path id="Polygon_14" data-name="Polygon 14" d="M222.842,58.6c17.279-27.248,57.037-27.248,74.317,0l180,283.84C495.732,371.731,474.685,410,440,410H80c-34.689,0-55.736-38.269-37.158-67.564Z" transform="translate(-2045 -24333) rotate(90)" fill="{{ video_icon_color }}"></path>
-                            </g>
-                          </svg>
-                        {% endif %}
-                      </div>
-                    </div>
-
-                    <div class="testimonials-video-{{ section.id }}">
-                      {% if block.settings.poster != blank %}
-                        <div class="testimonials-video-poster-{{ section.id }} {% if block.settings.controls %}testimonials-video-poster-with-controls-{{ section.id }}{% endif %}">
-                          <img src="{{ block.settings.poster | image_url }}" alt="{{ block.settings.poster.alt }}" {% if lazy %}loading="lazy"{% endif %}>
-                        </div>
+      {% unless rating_text_hide and rating_hide and stars_count == 0 %}
+        <div class="testimonials-rating-{{ section.id }}">
+          {% unless rating_text_hide %}
+            <p class="testimonials-rating-text-{{ section.id }}">{{ rating_text }}</p>
+          {% endunless %}
+          {% unless rating_hide %}
+            <span>{{ rating }}</span>
+             <p class="testimonials-rating-text-{{ section.id }}"><strong>/ 5</strong></p>
+          {% endunless %}
+          {% if stars_count != 0 %}
+            <div class="testimonials-stars-{{ section.id }}">
+                {% if stars_icon != blank %}
+                  {% for item in (1..stars_count) %}
+                    <img src="{{ stars_icon | image_url }}" alt="{{ stars_icon.alt }}" {% if lazy %}loading="lazy"{% endif %}>
+                  {% endfor %}
+                {% else %}
+                  {% if stars_count > 0 %}
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      {% if stars_count == 0.5 %}
+                        <defs>
+                          <linearGradient id="grad{{ section.id }}1">
+                            <stop offset="0%" stop-color="{{ stars_bg_color }}" />
+                            <stop offset="50%" stop-color="{{ stars_bg_color }}" />
+                            <stop offset="50%" stop-color="#DDDDDD" />
+                            <stop offset="100%" stop-color="#DDDDDD" />
+                          </linearGradient>
+                        </defs>
                       {% endif %}
-                      {% assign video_id =  block.settings.video.id | default: block.settings.video_url.id %}
-                      {%- if block.settings.video == null and block.settings.video_url != null -%}
-                        
-                        {% assign loop = '&loop=1&playlist=' | append: video_id %}
-                        
-                        {%- if block.settings.video_url.type == 'youtube' -%}
-                          <iframe
-                            data-src="https://www.youtube.com/embed/{{ video_id }}?enablejsapi=1{{ loop }}"
-                            class="lazy"
-                            allow="autoplay; encrypted-media"
-                            allowfullscreen
-                            {% if lazy %}loading="lazy"{% endif %}
-                            title="Fixed Video"
-                          ></iframe>
-                        {%- else -%}
-                          <iframe
-                            data-src="https://player.vimeo.com/video/{{ video_id }}{{ loop }}"
-                            class="lazy"
-                            allow="autoplay; encrypted-media"
-                            allowfullscreen
-                            {% if lazy %}loading="lazy"{% endif %}
-                            title="Fixed Video"
-                          ></iframe>
-                        {% endif %}
-                      {% else %}
-    
-                        <video data-src="{{ block.settings.video.sources[1].url }}" {% if block.settings.controls %}controls{% endif %} playsinline preload="none" loop class="lazy"></video>
-                      {% endif %}
-                        
-                    </div>
-                    
+                      <rect width="32" height="32" fill="{% if stars_count == 0.5 %}url(#grad{{ section.id }}1){% else %}{{ stars_bg_color }}{% endif %}"/>
+                      <g clip-path="url(#clip0_25_4)">
+                      <path d="M9.20283 27L16.001 21.807L22.7972 27L20.2018 18.596L27 13.403H18.5984L16.001 5L13.4037 13.403H5L11.7982 18.596L9.20283 27Z" fill="{{ stars_color }}"/>
+                      </g>
+                      <defs>
+                      <clipPath id="clip0_25_4">
+                      <rect width="22" height="22" fill="{{ stars_color }}" transform="translate(5 5)"/>
+                      </clipPath>
+                      </defs>
+                    </svg>
                   {% endif %}
-                </div>
-              {% endunless %}
-              {% unless hide_content %}
-                <div class="testimonials-content-{{ section.id }}">
+                  {% if stars_count > 1 %}
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      {% if stars_count == 1.5 %}
+                        <defs>
+                          <linearGradient id="grad{{ section.id }}2">
+                            <stop offset="0%" stop-color="{{ stars_bg_color }}" />
+                            <stop offset="50%" stop-color="{{ stars_bg_color }}" />
+                            <stop offset="50%" stop-color="#DDDDDD" />
+                            <stop offset="100%" stop-color="#DDDDDD" />
+                          </linearGradient>
+                        </defs>
+                      {% endif %}
+                      <rect width="32" height="32" fill="{% if stars_count == 1.5 %}url(#grad{{ section.id }}2){% else %}{{ stars_bg_color }}{% endif %}"/>
+                      <g clip-path="url(#clip0_25_4)">
+                      <path d="M9.20283 27L16.001 21.807L22.7972 27L20.2018 18.596L27 13.403H18.5984L16.001 5L13.4037 13.403H5L11.7982 18.596L9.20283 27Z" fill="{{ stars_color }}"/>
+                      </g>
+                      <defs>
+                      <clipPath id="clip0_25_4">
+                      <rect width="22" height="22" fill="{{ stars_color }}" transform="translate(5 5)"/>
+                      </clipPath>
+                      </defs>
+                    </svg>
+                  {% endif %}
+                  {% if stars_count > 2 %}
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      {% if stars_count == 2.5 %}
+                        <defs>
+                          <linearGradient id="grad{{ section.id }}3">
+                            <stop offset="0%" stop-color="{{ stars_bg_color }}" />
+                            <stop offset="50%" stop-color="{{ stars_bg_color }}" />
+                            <stop offset="50%" stop-color="#DDDDDD" />
+                            <stop offset="100%" stop-color="#DDDDDD" />
+                          </linearGradient>
+                        </defs>
+                      {% endif %}
+                      <rect width="32" height="32" fill="{% if stars_count == 2.5 %}url(#grad{{ section.id }}3){% else %}{{ stars_bg_color }}{% endif %}"/>
+                      <g clip-path="url(#clip0_25_4)">
+                      <path d="M9.20283 27L16.001 21.807L22.7972 27L20.2018 18.596L27 13.403H18.5984L16.001 5L13.4037 13.403H5L11.7982 18.596L9.20283 27Z" fill="{{ stars_color }}"/>
+                      </g>
+                      <defs>
+                      <clipPath id="clip0_25_4">
+                      <rect width="22" height="22" fill="{{ stars_color }}" transform="translate(5 5)"/>
+                      </clipPath>
+                      </defs>
+                    </svg>
+                  {% endif %}
+                  {% if stars_count > 3 %}
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      {% if stars_count == 3.5 %}
+                        <defs>
+                          <linearGradient id="grad{{ section.id }}4">
+                            <stop offset="0%" stop-color="{{ stars_bg_color }}" />
+                            <stop offset="50%" stop-color="{{ stars_bg_color }}" />
+                            <stop offset="50%" stop-color="#DDDDDD" />
+                            <stop offset="100%" stop-color="#DDDDDD" />
+                          </linearGradient>
+                        </defs>
+                      {% endif %}
+                      <rect width="32" height="32" fill="{% if stars_count == 3.5 %}url(#grad{{ section.id }}4){% else %}{{ stars_bg_color }}{% endif %}"/>
+                      <g clip-path="url(#clip0_25_4)">
+                      <path d="M9.20283 27L16.001 21.807L22.7972 27L20.2018 18.596L27 13.403H18.5984L16.001 5L13.4037 13.403H5L11.7982 18.596L9.20283 27Z" fill="{{ stars_color }}"/>
+                      </g>
+                      <defs>
+                      <clipPath id="clip0_25_4">
+                      <rect width="22" height="22" fill="{{ stars_color }}" transform="translate(5 5)"/>
+                      </clipPath>
+                      </defs>
+                    </svg>
+                  {% endif %}
+                  {% if stars_count > 4 %}
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      {% if stars_count == 4.5 %}
+                        <defs>
+                          <linearGradient id="grad{{ section.id }}5">
+                            <stop offset="0%" stop-color="{{ stars_bg_color }}" />
+                            <stop offset="50%" stop-color="{{ stars_bg_color }}" />
+                            <stop offset="50%" stop-color="#DDDDDD" />
+                            <stop offset="100%" stop-color="#DDDDDD" />
+                          </linearGradient>
+                        </defs>
+                      {% endif %}
+                      <rect width="32" height="32" fill="{% if stars_count == 4.5 %}url(#grad{{ section.id }}5){% else %}{{ stars_bg_color }}{% endif %}"/>
+                      <g clip-path="url(#clip0_25_4)">
+                      <path d="M9.20283 27L16.001 21.807L22.7972 27L20.2018 18.596L27 13.403H18.5984L16.001 5L13.4037 13.403H5L11.7982 18.596L9.20283 27Z" fill="{{ stars_color }}"/>
+                      </g>
+                      <defs>
+                      <clipPath id="clip0_25_4">
+                      <rect width="22" height="22" fill="{{ stars_color }}" transform="translate(5 5)"/>
+                      </clipPath>
+                      </defs>
+                    </svg>
+                  {% endif %}
+                {% endif %}
+            </div>
+          {% endif %}
+        </div>
+      {% endunless %}
+      {% if text != blank %}
+        <div class="testimonials-text-{{ section.id }}">
+          {{ text }}
+          {% if text_right_image != blank %}
+            <div class="testimonials-image-{{ section.id }}">
+              <img src="{{ text_right_image | image_url }}" alt="{{ text_right_image.alt }}" {% if lazy %}loading="lazy"{% endif %}>
+            </div>
+          {% endif %}
+        </div>
+      {% endif %}
+      <div class="testimonials-slider-wrapper-{{ section.id }}">
+        <div class="testimonials-slider-{{ section.id }} swiper preview">
+          <div class="swiper-wrapper">
+            {% for block in section.blocks %}
+              <div class="testimonials-slide-{{ section.id }} swiper-slide">
+                <div class="testimonials-slide-top-{{ section.id }}">
                   {% if block.settings.stars_count != 0 %}
                     <div class="testimonials-stars-{{ section.id }}">
-                      {% if stars_icon != blank %}
-                        {% for item in (1..block.settings.stars_count) %}
-                          <img src="{{ stars_icon | image_url }}" alt="{{ stars_icon.alt }}" {% if lazy %}loading="lazy"{% endif %}>
-                        {% endfor %}
-                      {% else %}
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="19" viewBox="0 0 20 19" fill="none">
-                          {% if block.settings.stars_count > 0 and block.settings.stars_count < 1  %}
-                            <defs>
-                              <linearGradient id="grad{{ section.id }}1">
-                                <stop offset="0%" stop-color="{{ stars_color }}" />
-                                <stop offset="50%" stop-color="{{ stars_color }}" />
-                                <stop offset="50%" stop-color="white" />
-                                <stop offset="100%" stop-color="white" />
-                              </linearGradient>
-                            </defs>
+                        {% if stars_icon != blank %}
+                          {% for item in (1..block.settings.stars_count) %}
+                            <img src="{{ stars_icon | image_url }}" alt="{{ stars_icon.alt }}" {% if lazy %}loading="lazy"{% endif %}>
+                          {% endfor %}
+                        {% else %}
+                          {% if block.settings.stars_count > 0 %}
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              {% if block.settings.stars_count == 0.5 %}
+                                <defs>
+                                  <linearGradient id="grad{{ section.id }}1">
+                                    <stop offset="0%" stop-color="{{ stars_bg_color }}" />
+                                    <stop offset="50%" stop-color="{{ stars_bg_color }}" />
+                                    <stop offset="50%" stop-color="#DDDDDD" />
+                                    <stop offset="100%" stop-color="#DDDDDD" />
+                                  </linearGradient>
+                                </defs>
+                              {% endif %}
+                              <rect width="32" height="32" fill="{% if block.settings.stars_count == 0.5 %}url(#grad{{ section.id }}1){% else %}{{ stars_bg_color }}{% endif %}"/>
+                              <g clip-path="url(#clip0_25_4)">
+                              <path d="M9.20283 27L16.001 21.807L22.7972 27L20.2018 18.596L27 13.403H18.5984L16.001 5L13.4037 13.403H5L11.7982 18.596L9.20283 27Z" fill="{{ stars_color }}"/>
+                              </g>
+                              <defs>
+                              <clipPath id="clip0_25_4">
+                              <rect width="22" height="22" fill="{{ stars_color }}" transform="translate(5 5)"/>
+                              </clipPath>
+                              </defs>
+                            </svg>
                           {% endif %}
-                          <path {% if block.settings.stars_count > 0 and block.settings.stars_count < 1 %}stroke="{{ stars_color }}"{% endif %} d="M10 0L12.9389 5.95492L19.5106 6.90983L14.7553 11.5451L15.8779 18.0902L10 15L4.12215 18.0902L5.24472 11.5451L0.489435 6.90983L7.06107 5.95492L10 0Z" fill="{% if block.settings.stars_count > 0 and block.settings.stars_count < 1 %}url(#grad{{ section.id }}1){% elsif block.settings.stars_count > 0.5 %}{{ stars_color }}{% endif %}"></path>
-                        </svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="19" viewBox="0 0 20 19" fill="none">
-                          {% if block.settings.stars_count > 1 and block.settings.stars_count < 2  %}
-                            <defs>
-                              <linearGradient id="grad{{ section.id }}2">
-                                <stop offset="0%" stop-color="{{ stars_color }}" />
-                                <stop offset="50%" stop-color="{{ stars_color }}" />
-                                <stop offset="50%" stop-color="white" />
-                                <stop offset="100%" stop-color="white" />
-                              </linearGradient>
-                            </defs>
+                          {% if block.settings.stars_count > 1 %}
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              {% if block.settings.stars_count == 1.5 %}
+                                <defs>
+                                  <linearGradient id="grad{{ section.id }}2">
+                                    <stop offset="0%" stop-color="{{ stars_bg_color }}" />
+                                    <stop offset="50%" stop-color="{{ stars_bg_color }}" />
+                                    <stop offset="50%" stop-color="#DDDDDD" />
+                                    <stop offset="100%" stop-color="#DDDDDD" />
+                                  </linearGradient>
+                                </defs>
+                              {% endif %}
+                              <rect width="32" height="32" fill="{% if block.settings.stars_count == 1.5 %}url(#grad{{ section.id }}2){% else %}{{ stars_bg_color }}{% endif %}"/>
+                              <g clip-path="url(#clip0_25_4)">
+                              <path d="M9.20283 27L16.001 21.807L22.7972 27L20.2018 18.596L27 13.403H18.5984L16.001 5L13.4037 13.403H5L11.7982 18.596L9.20283 27Z" fill="{{ stars_color }}"/>
+                              </g>
+                              <defs>
+                              <clipPath id="clip0_25_4">
+                              <rect width="22" height="22" fill="{{ stars_color }}" transform="translate(5 5)"/>
+                              </clipPath>
+                              </defs>
+                            </svg>
                           {% endif %}
-                          <path {% if block.settings.stars_count > 1 and block.settings.stars_count < 2 %}stroke="{{ stars_color }}"{% endif %} d="M10 0L12.9389 5.95492L19.5106 6.90983L14.7553 11.5451L15.8779 18.0902L10 15L4.12215 18.0902L5.24472 11.5451L0.489435 6.90983L7.06107 5.95492L10 0Z" fill="{% if block.settings.stars_count > 1 and block.settings.stars_count < 2 %}url(#grad{{ section.id }}2){% elsif block.settings.stars_count > 1.5 %}{{ stars_color }}{% endif %}"></path>
-                        </svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="19" viewBox="0 0 20 19" fill="none">
-                          {% if block.settings.stars_count > 2 and block.settings.stars_count < 3  %}
-                            <defs>
-                              <linearGradient id="grad{{ section.id }}3">
-                                <stop offset="0%" stop-color="{{ stars_color }}" />
-                                <stop offset="50%" stop-color="{{ stars_color }}" />
-                                <stop offset="50%" stop-color="white" />
-                                <stop offset="100%" stop-color="white" />
-                              </linearGradient>
-                            </defs>
+                          {% if block.settings.stars_count > 2 %}
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              {% if block.settings.stars_count == 2.5 %}
+                                <defs>
+                                  <linearGradient id="grad{{ section.id }}3">
+                                    <stop offset="0%" stop-color="{{ stars_bg_color }}" />
+                                    <stop offset="50%" stop-color="{{ stars_bg_color }}" />
+                                    <stop offset="50%" stop-color="#DDDDDD" />
+                                    <stop offset="100%" stop-color="#DDDDDD" />
+                                  </linearGradient>
+                                </defs>
+                              {% endif %}
+                              <rect width="32" height="32" fill="{% if block.settings.stars_count == 2.5 %}url(#grad{{ section.id }}3){% else %}{{ stars_bg_color }}{% endif %}"/>
+                              <g clip-path="url(#clip0_25_4)">
+                              <path d="M9.20283 27L16.001 21.807L22.7972 27L20.2018 18.596L27 13.403H18.5984L16.001 5L13.4037 13.403H5L11.7982 18.596L9.20283 27Z" fill="{{ stars_color }}"/>
+                              </g>
+                              <defs>
+                              <clipPath id="clip0_25_4">
+                              <rect width="22" height="22" fill="{{ stars_color }}" transform="translate(5 5)"/>
+                              </clipPath>
+                              </defs>
+                            </svg>
                           {% endif %}
-                          <path {% if block.settings.stars_count > 2 and block.settings.stars_count < 3 %}stroke="{{ stars_color }}"{% endif %} d="M10 0L12.9389 5.95492L19.5106 6.90983L14.7553 11.5451L15.8779 18.0902L10 15L4.12215 18.0902L5.24472 11.5451L0.489435 6.90983L7.06107 5.95492L10 0Z" fill="{% if block.settings.stars_count > 2 and block.settings.stars_count < 3 %}url(#grad{{ section.id }}3){% elsif block.settings.stars_count > 2.5 %}{{ stars_color }}{% endif %}"></path>
-                        </svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="19" viewBox="0 0 20 19" fill="none">
-                          {% if block.settings.stars_count > 3 and block.settings.stars_count < 4  %}
-                            <defs>
-                              <linearGradient id="grad{{ section.id }}4">
-                                <stop offset="0%" stop-color="{{ stars_color }}" />
-                                <stop offset="50%" stop-color="{{ stars_color }}" />
-                                <stop offset="50%" stop-color="white" />
-                                <stop offset="100%" stop-color="white" />
-                              </linearGradient>
-                            </defs>
+                          {% if block.settings.stars_count > 3 %}
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              {% if block.settings.stars_count == 3.5 %}
+                                <defs>
+                                  <linearGradient id="grad{{ section.id }}4">
+                                    <stop offset="0%" stop-color="{{ stars_bg_color }}" />
+                                    <stop offset="50%" stop-color="{{ stars_bg_color }}" />
+                                    <stop offset="50%" stop-color="#DDDDDD" />
+                                    <stop offset="100%" stop-color="#DDDDDD" />
+                                  </linearGradient>
+                                </defs>
+                              {% endif %}
+                              <rect width="32" height="32" fill="{% if block.settings.stars_count == 3.5 %}url(#grad{{ section.id }}4){% else %}{{ stars_bg_color }}{% endif %}"/>
+                              <g clip-path="url(#clip0_25_4)">
+                              <path d="M9.20283 27L16.001 21.807L22.7972 27L20.2018 18.596L27 13.403H18.5984L16.001 5L13.4037 13.403H5L11.7982 18.596L9.20283 27Z" fill="{{ stars_color }}"/>
+                              </g>
+                              <defs>
+                              <clipPath id="clip0_25_4">
+                              <rect width="22" height="22" fill="{{ stars_color }}" transform="translate(5 5)"/>
+                              </clipPath>
+                              </defs>
+                            </svg>
                           {% endif %}
-                          <path {% if block.settings.stars_count > 3 and block.settings.stars_count < 4  %}stroke="{{ stars_color }}"{% endif %} d="M10 0L12.9389 5.95492L19.5106 6.90983L14.7553 11.5451L15.8779 18.0902L10 15L4.12215 18.0902L5.24472 11.5451L0.489435 6.90983L7.06107 5.95492L10 0Z" fill="{% if block.settings.stars_count > 3 and block.settings.stars_count < 4  %}url(#grad{{ section.id }}4){% elsif block.settings.stars_count > 3.5 %}{{ stars_color }}{% endif %}"></path>
-                        </svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="19" viewBox="0 0 20 19" fill="none">
-                          {% if block.settings.stars_count > 4 and block.settings.stars_count < 5  %}
-                            <defs>
-                              <linearGradient id="grad{{ section.id }}5">
-                                <stop offset="0%" stop-color="{{ stars_color }}" />
-                                <stop offset="50%" stop-color="{{ stars_color }}" />
-                                <stop offset="50%" stop-color="white" />
-                                <stop offset="100%" stop-color="white" />
-                              </linearGradient>
-                            </defs>
+                          {% if block.settings.stars_count > 4 %}
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              {% if block.settings.stars_count == 4.5 %}
+                                <defs>
+                                  <linearGradient id="grad{{ section.id }}5">
+                                    <stop offset="0%" stop-color="{{ stars_bg_color }}" />
+                                    <stop offset="50%" stop-color="{{ stars_bg_color }}" />
+                                    <stop offset="50%" stop-color="#DDDDDD" />
+                                    <stop offset="100%" stop-color="#DDDDDD" />
+                                  </linearGradient>
+                                </defs>
+                              {% endif %}
+                              <rect width="32" height="32" fill="{% if block.settings.stars_count == 4.5 %}url(#grad{{ section.id }}5){% else %}{{ stars_bg_color }}{% endif %}"/>
+                              <g clip-path="url(#clip0_25_4)">
+                              <path d="M9.20283 27L16.001 21.807L22.7972 27L20.2018 18.596L27 13.403H18.5984L16.001 5L13.4037 13.403H5L11.7982 18.596L9.20283 27Z" fill="{{ stars_color }}"/>
+                              </g>
+                              <defs>
+                              <clipPath id="clip0_25_4">
+                              <rect width="22" height="22" fill="{{ stars_color }}" transform="translate(5 5)"/>
+                              </clipPath>
+                              </defs>
+                            </svg>
                           {% endif %}
-                          <path {% if block.settings.stars_count > 4 and block.settings.stars_count < 5  %}stroke="{{ stars_color }}"{% endif %} d="M10 0L12.9389 5.95492L19.5106 6.90983L14.7553 11.5451L15.8779 18.0902L10 15L4.12215 18.0902L5.24472 11.5451L0.489435 6.90983L7.06107 5.95492L10 0Z" fill="{% if block.settings.stars_count > 4 and block.settings.stars_count < 5  %}url(#grad{{ section.id }}5){% elsif block.settings.stars_count > 4.5 %}{{ stars_color }}{% endif %}"></path>
-                        </svg>
-                      {% endif %}
+                              
+                        {% endif %}
                     </div>
+                  {% endif %}
+                  {% if block.settings.heading != blank %}
+                    <p class="testimonials-slide-heading-{{ section.id }}">{{ block.settings.heading }}</p>
                   {% endif %}
                   {% if block.settings.text != blank %}
-                    <div class="testimonials-text-{{ section.id }}">
-                      {{ block.settings.text }}
-                    </div>
-                  {% endif %}
-                  {% if block.settings.author != blank %}
-                    <div class="testimonials-author-{{ section.id }}">{{ block.settings.author }}</div>
+                    <p class="testimonials-slide-text-{{ section.id }}">
+                      <span>{{ block.settings.text }}</span>
+                      <span class="testimonials-slide-text-small-{{ section.id }} testimonials-slide-text-small">{{ block.settings.text | truncatewords: card_count_words }}</span>
+                      <span class="testimonials-slide-text-big-{{ section.id }} testimonials-slide-text-big">{{ block.settings.text }}</span>
+                      <button class="testimonials-slide-text-btn-{{ section.id }} testimonials-slide-text-btn">{{ card_text_more }}</button>
+                    </p>
                   {% endif %}
                 </div>
-              {% endunless %}
-            </div>
-          {% endfor %}
-        </div>
-        <div class="testimonials-navigation-{{ section.id }}">
-          <button class="testimonials-btn-prev-{{ section.id }}">
-            {% if arrow_left != blank %}
-              <img src="{{ arrow_left | image_url }}" alt="{{ arrow_left.alt }}">
-            {% else %}
-            <svg width="92" height="38" viewBox="0 0 92 38" fill="none" xmlns="http://www.w3.org/2000/svg" style="transform: rotate(-180deg);">
-              <path d="M72.472 0L71.063 1.409L87.303 17.649H0V19.643H87.3L71.06 35.883L72.469 37.293L91.115 18.646L72.472 0Z" fill="black"/>
-            </svg>
-            {% endif %}
-          </button>
+                <div class="testimonials-slide-bottom-{{ section.id }}">
+                  {% if block.settings.author_date != blank %}
+                    <p class="testimonials-slide-author-date-{{ section.id }}">{{ block.settings.author_date }}</p>
+                  {% endif %}
+                </div>
+              </div>
+            {% endfor %}
+          </div>
+          <div class="testimonials-btn-prev-{{ section.id }}">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g id="Left"><path d="M14,17a1,1,0,0,1-.707-.293l-4-4a1,1,0,0,1,0-1.414l4-4a1,1,0,1,1,1.414,1.414L11.414,12l3.293,3.293A1,1,0,0,1,14,17Z" style="fill:#1c1b1e"/></g></svg>
+          </div>
+          <div class="testimonials-btn-next-{{ section.id }}">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g id="Left"><path d="M14,17a1,1,0,0,1-.707-.293l-4-4a1,1,0,0,1,0-1.414l4-4a1,1,0,1,1,1.414,1.414L11.414,12l3.293,3.293A1,1,0,0,1,14,17Z" style="fill:#1c1b1e"/></g></svg>
+          </div>
           <div class="testimonials-pagination-{{ section.id }} swiper-pagination"></div>
-          <button class="testimonials-btn-next-{{ section.id }}">
-            {% if arrow_right != blank %}
-              <img src="{{ arrow_right | image_url }}" alt="{{ arrow_right.alt }}">
-            {% else %}
-            <svg width="92" height="38" viewBox="0 0 92 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M72.472 0L71.063 1.409L87.303 17.649H0V19.643H87.3L71.06 35.883L72.469 37.293L91.115 18.646L72.472 0Z" fill="black"/>
-            </svg>
-            {% endif %}
-          </button>
         </div>
       </div>
+      {% if button != blank %}
+        <a href="{{ button_url }}" class="testimonials-btn-{{ section.id }}">{{ button }}</a>
+      {% endif %}
     </div>
 </div>
 
-<script src="https://cdn.jsdelivr.net/npm/swiper@6.8.4/swiper-bundle.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@19.1.3/dist/lazyload.min.js"></script>
-
+<script src="https://cdn.jsdelivr.net/npm/swiper@8.4.7/swiper-bundle.min.js"></script>
+              
 <script>
-  function initTestimonials12() {
+  function initTestimonials8{{ section.id | replace: '-', '' }}() {
     document.querySelector('.testimonials-slider-{{ section.id }}').classList.remove('preview');
-    const slider = new Swiper(".testimonials-slider-{{ section.id }}", {
+    const slider = new Swiper('.testimonials-slider-{{ section.id }}', {
       speed: 300,
-      spaceBetween: 20,
       loop: true,
-      centeredSlides: true,
-      {% if autoplay %}
-      autoplay: {
-        delay: {{ autoplay_delay }}000,
-      },
-      {% endif %}
+      watchSlidesProgress: true,
       navigation: {
         nextEl: '.testimonials-btn-next-{{ section.id }}',
-        prevEl: '.testimonials-btn-prev-{{ section.id }}',
+        prevEl: '.testimonials-btn-prev-{{ section.id }}'
       },
       pagination: {
         el: '.testimonials-pagination-{{ section.id }}',
         type: 'bullets',
-        clickable: true,
+        clickable: true
       },
       breakpoints: {
         320: {
+          centeredSlides: true,
           spaceBetween: {{ slider_gap_mobile }},
           slidesPerView: {{ slider_view_mobile }}
         },
         768: {
+          centeredSlides: {% if size_tablet == 0 %}false{% else %}true{% endif %},
           spaceBetween: {{ slider_gap_mobile }},
           slidesPerView: {{ slider_view | times: 0.5 | round: 0 }}
         },
         1024: {
+          centeredSlides: {% if size == 0 %}false{% else %}true{% endif %},
           spaceBetween: {{ slider_gap }},
           slidesPerView: {{ slider_view }}
         }
       }
-    });
-
-    slider.on('slideChange', function () {
-
-      const allSlides = slider.slides;
-
-      allSlides.forEach(function(slide) {
-        if(!slide.classList.contains('.swiper-slide-active')) {
-          let video = slide.querySelector('video');
-          let frame = slide.querySelector('iframe');
-          let btn = slide.querySelector('.testimonials-video-btn-wrapper-{{ section.id }}');
-          if(video) {
-            video.pause();
-          }
-          if(frame) {
-            frame.src = frame.src.replace('&autoplay=1', '');
-          }
-          if(btn) {
-            btn.classList.remove('active');
-          }
-        }
-      });
-    });
-
-    let slides = document.querySelectorAll('.testimonials-slide-{{ section.id }}');
-    if(slides) {
-      slides.forEach(el => {
-        let btn = el.querySelector('.testimonials-video-btn-wrapper-{{ section.id }}');
-        let videoWrapper = el.querySelector('.testimonials-video-poster-{{ section.id }}');
-        let video = el.querySelector('video');
-        let frame = el.querySelector('iframe');
-
-        if(btn) {
-          btn.addEventListener('click', () => {
-            btn.classList.add('active');
-            if(videoWrapper) {
-              videoWrapper.classList.add('active'); 
-            }
-            if(video) {
-             video.play();
-            }
-            if(frame) {
-              frame.src += "&autoplay=1";
-            }
-          })
-        }
-
-        if(videoWrapper) {
-          videoWrapper.addEventListener('click', () => {
-            if(video) {
-             video.pause();
-            }
-            if(frame) {
-              frame.src = frame.src.replace(/&autoplay=0/g, '');
-              frame.src = frame.src.replace(/&autoplay=1/g, '');
-            }
-            if(btn) {
-              btn.classList.remove('active');
-            }
-          })
+    })
+    // slider.slidePrev();
+    let texts = document.querySelectorAll('.testimonials-slide-text-{{ section.id }}');
+    texts.forEach(el => {
+      let btn = el.querySelector('.testimonials-slide-text-btn');
+      let small = el.querySelector('.testimonials-slide-text-small');
+      let big = el.querySelector('.testimonials-slide-text-big');
+      btn.addEventListener('click', () => {
+        console.log(btn);
+        if(btn.classList.contains("active")) {
+          small.classList.remove('active');
+          big.classList.remove('active');
+          btn.classList.remove('active');
+          btn.textContent = "{{ card_text_more }}";
+        } else {
+          small.classList.add('active');
+          big.classList.add('active');
+          btn.textContent = "{{ card_text_less }}";
+          btn.classList.add('active');
         }
       })
-    }
-
-    var lazyLoadInstance = new LazyLoad();
-
-    window.addEventListener("LazyLoad::Initialized",function (event) {
-      window.lazyLoadInstance = event.detail.instance;
-    },false );
+    })
   }
 
-  document.addEventListener('DOMContentLoaded', initTestimonials12);
+  document.addEventListener('DOMContentLoaded', function() {
+    setTimeout(initTestimonials8{{ section.id | replace: '-', '' }}, 500);
+  });
   
   if (Shopify.designMode) {
-     document.addEventListener('shopify:section:unload', initTestimonials12);
-     document.addEventListener('shopify:section:load', initTestimonials12);
+     document.addEventListener('shopify:section:unload', initTestimonials8{{ section.id | replace: '-', '' }});
+     document.addEventListener('shopify:section:load', initTestimonials8{{ section.id | replace: '-', '' }});
   }
+  
 </script>
 
 {% schema %}
   {
-    "name": "SS - Testimonials #12",
+    "name": "SS - Testimonial #8",
     "settings": [
-       {
+      {
         "type": "header",
-        "content": "Save section to instantiate slider."
+        "content": "ATT: Save editor before slider works"
       },
       {
         "type": "header",
-        "content": "Heading Settings"
+        "content": "Heading"
       },
       {
-        "type": "richtext",
+        "type": "text",
         "id": "heading",
         "label": "Heading",
-        "default": "<h2>Loved by everyone, everywhere. Don't miss out.</h2>"
+        "default": "Our customers tell it better than we do!"
       },
       {
         "type": "checkbox",
@@ -1120,7 +1294,7 @@ For inquiries or permissions, contact daniel@section.store
         "step": 2,
         "unit": "px",
         "label": "Heading Size",
-        "default": 30
+        "default": 40
       },
       {
         "type": "range",
@@ -1130,7 +1304,7 @@ For inquiries or permissions, contact daniel@section.store
         "step": 2,
         "unit": "px",
         "label": "Heading Size - Mobile",
-        "default": 22
+        "default": 24
       },
       {
         "type": "range",
@@ -1143,89 +1317,276 @@ For inquiries or permissions, contact daniel@section.store
         "default": 130
       },
       {
-        "type": "text_alignment",
+        "type": "select",
         "id": "heading_align",
         "label": "Heading Text Align",
-        "default": "center"
-      },
-      {
-        "type": "text_alignment",
-        "id": "heading_align_mobile",
-        "label": "Heading Text Align - Mobile",
-        "default": "center"
+        "default": "center",
+        "options": [
+          {
+            "label": "Left",
+            "value": "left"
+          },
+          {
+            "label": "Center",
+            "value": "center"
+          },
+          {
+            "label": "Right",
+            "value": "right"
+          }
+        ]
       },
       {
         "type": "header",
-        "content": "Sub-Heading Settings"
+        "content": "Rating Text"
       },
       {
-        "type": "richtext",
-        "id": "sub_heading",
-        "label": "Sub-Heading"
+        "type": "text",
+        "id": "rating_text",
+        "label": "Rating Text",
+        "default": "Excellent"
       },
       {
         "type": "checkbox",
-        "id": "sub_heading_custom",
+        "id": "rating_text_custom",
         "label": "Use Custom Font",
         "default": false
       },
       {
         "type": "font_picker",
-        "id": "sub_heading_font",
-        "label": "Sub-Heading Font Family",
+        "id": "rating_text_font",
+        "label": "Rating Text Font Family",
         "default": "josefin_sans_n4"
       },
       {
         "type": "range",
-        "id": "sub_heading_size",
+        "id": "rating_text_size",
         "min": 0,
         "max": 72,
         "step": 2,
         "unit": "px",
-        "label": "Sub-Heading Size",
-        "default": 30
+        "label": "Rating Text Size",
+        "default": 24
       },
       {
         "type": "range",
-        "id": "sub_heading_size_mobile",
+        "id": "rating_text_size_mobile",
         "min": 0,
         "max": 72,
         "step": 2,
         "unit": "px",
-        "label": "Sub-Heading Size - Mobile",
-        "default": 22
+        "label": "Rating Text Size - Mobile",
+        "default": 20
       },
       {
         "type": "range",
-        "id": "sub_heading_height",
+        "id": "rating_text_height",
         "min": 50,
         "max": 200,
         "step": 10,
         "unit": "%",
-        "label": "Sub-Heading Line Height",
+        "label": "Rating Text Line Height",
         "default": 130
       },
       {
         "type": "range",
-        "id": "sub_heading_mt",
+        "id": "rating_text_mt",
         "min": 0,
         "max": 100,
+        "step": 4,
+        "unit": "px",
+        "label": "Rating Text Margin Top",
+        "default": 16
+      },
+      {
+        "type": "header",
+        "content": "Rating Settings"
+      },
+      {
+        "type": "range",
+        "id": "rating",
+        "min": 0,
+        "max": 5,
+        "step": 0.1,
+        "label": "Rating",
+        "default": 4.7
+      },
+      {
+        "type": "checkbox",
+        "id": "rating_hide",
+        "label": "Rating Hide",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "rating_text_hide",
+        "label": "Rating Text Hide",
+        "default": false
+      },
+      {
+        "type": "select",
+        "id": "rating_align",
+        "label": "Rating Align",
+        "default": "center",
+        "options": [
+          {
+            "label": "Left",
+            "value": "start"
+          },
+          {
+            "label": "Center",
+            "value": "center"
+          },
+          {
+            "label": "Right",
+            "value": "end"
+          }
+        ]
+      },
+      {
+        "type": "header",
+        "content": "Stars Settings"
+      },
+      {
+        "type": "image_picker",
+        "label": "Stars Icon",
+        "id": "stars_icon",
+        "info": "Replaces the default stars icon"
+      },
+      {
+        "type": "range",
+        "id": "stars_count",
+        "min": 0,
+        "max": 5,
+        "step": 0.5,
+        "label": "Stars Count",
+        "default": 5
+      },
+      {
+        "type": "range",
+        "id": "stars_size",
+        "min": 10,
+        "max": 100,
+        "step": 2,
+        "label": "Stars Size",
+        "default": 28
+      },
+      {
+        "type": "range",
+        "id": "stars_size_mobile",
+        "min": 10,
+        "max": 100,
+        "step": 2,
+        "label": "Stars Size - Mobile",
+        "default": 24
+      },
+      {
+        "type": "select",
+        "id": "stars_align",
+        "label": "Stars Align on Card",
+        "default": "center",
+        "options": [
+          {
+            "label": "Left",
+            "value": "start"
+          },
+          {
+            "label": "Center",
+            "value": "center"
+          },
+          {
+            "label": "Right",
+            "value": "end"
+          }
+        ]
+      },
+      {
+        "type": "header",
+        "content": "Text"
+      },
+      {
+        "type": "richtext",
+        "id": "text",
+        "label": "Text",
+        "default": "<p>based on <strong>1 067</strong> reviews</p>",
+        "info": "Use 'Strong' for underline text"
+      },
+      {
+        "type": "image_picker",
+        "label": "Text Right Image",
+        "id": "text_right_image"
+      },
+      {
+        "type": "checkbox",
+        "id": "text_custom",
+        "label": "Use Custom Font",
+        "default": false
+      },
+      {
+        "type": "font_picker",
+        "id": "text_font",
+        "label": "Text Font Family",
+        "default": "josefin_sans_n4"
+      },
+      {
+        "type": "range",
+        "id": "text_size",
+        "min": 0,
+        "max": 72,
         "step": 2,
         "unit": "px",
-        "label": "Sub-Heading Margin Top",
-        "default": 12
+        "label": "Text Size",
+        "default": 20
       },
       {
-        "type": "text_alignment",
-        "id": "sub_heading_align",
-        "label": "Sub-Heading Text Align",
-        "default": "center"
+        "type": "range",
+        "id": "text_size_mobile",
+        "min": 0,
+        "max": 72,
+        "step": 2,
+        "unit": "px",
+        "label": "Text Size - Mobile",
+        "default": 16
       },
       {
-        "type": "text_alignment",
-        "id": "sub_heading_align_mobile",
-        "label": "Sub-Heading Text Align - Mobile",
-        "default": "center"
+        "type": "range",
+        "id": "text_height",
+        "min": 50,
+        "max": 200,
+        "step": 10,
+        "unit": "%",
+        "label": "Text Line Height",
+        "default": 130
+      },
+      {
+        "type": "select",
+        "id": "text_align",
+        "label": "Text Align",
+        "default": "center",
+        "options": [
+          {
+            "label": "Left",
+            "value": "start"
+          },
+          {
+            "label": "Center",
+            "value": "center"
+          },
+          {
+            "label": "Right",
+            "value": "end"
+          }
+        ]
+      },
+      {
+        "type": "range",
+        "id": "text_mt",
+        "min": 0,
+        "max": 100,
+        "step": 4,
+        "unit": "px",
+        "label": "Text Margin Top",
+        "default": 16
       },
       {
         "type": "header",
@@ -1233,21 +1594,31 @@ For inquiries or permissions, contact daniel@section.store
       },
       {
         "type": "range",
+        "id": "slider_width",
+        "min": 0,
+        "max": 100,
+        "step": 2,
+        "unit": "%",
+        "label": "Slider Width - Desktop",
+        "default": 80
+      },
+      {
+        "type": "range",
         "id": "slider_view",
-        "min": 2,
-        "max": 6,
-        "step": 0.1,
+        "min": 1,
+        "max": 3,
+        "step": 1,
         "label": "Slides Per View",
-        "default": 5.4
+        "default": 3
       },
       {
         "type": "range",
         "id": "slider_view_mobile",
         "min": 1,
-        "max": 2,
-        "step": 0.1,
+        "max": 3,
+        "step": 0.2,
         "label": "Slides Per View - Mobile",
-        "default": 1.5
+        "default": 1.2
       },
       {
         "type": "range",
@@ -1257,7 +1628,7 @@ For inquiries or permissions, contact daniel@section.store
         "step": 4,
         "unit": "px",
         "label": "Slider Gap",
-        "default": 28
+        "default": 20
       },
       {
         "type": "range",
@@ -1274,25 +1645,10 @@ For inquiries or permissions, contact daniel@section.store
         "id": "slider_mt",
         "min": 0,
         "max": 100,
-        "step": 2,
+        "step": 4,
         "unit": "px",
         "label": "Slider Margin Top",
-        "default": 20
-      },
-      {
-        "type": "checkbox",
-        "id": "autoplay",
-        "label": "Use Autoplay"
-      },
-      {
-        "type": "range",
-        "id": "autoplay_delay",
-        "min": 1,
-        "max": 10,
-        "step": 0.1,
-        "unit": "s",
-        "label": "Autoplay Delay",
-        "default": 5
+        "default": 36
       },
       {
         "type": "header",
@@ -1306,7 +1662,7 @@ For inquiries or permissions, contact daniel@section.store
         "step": 2,
         "unit": "px",
         "label": "Card Padding Vertical",
-        "default": 20
+        "default": 32
       },
       {
         "type": "range",
@@ -1316,7 +1672,7 @@ For inquiries or permissions, contact daniel@section.store
         "step": 2,
         "unit": "px",
         "label": "Card Padding Vertical - Mobile",
-        "default": 16
+        "default": 24
       },
       {
          "type": "range",
@@ -1326,7 +1682,7 @@ For inquiries or permissions, contact daniel@section.store
          "step": 2,
          "unit": "px",
          "label": "Card Padding Horizontal",
-         "default": 20
+         "default": 40
       },
       {
          "type": "range",
@@ -1336,7 +1692,7 @@ For inquiries or permissions, contact daniel@section.store
          "step": 2,
          "unit": "px",
          "label": "Card Padding Horizontal - Mobile",
-         "default": 16
+         "default": 24
       },
       {
          "type": "range",
@@ -1346,7 +1702,7 @@ For inquiries or permissions, contact daniel@section.store
          "step": 2,
          "unit": "px",
          "label": "Card Border Radius",
-         "default": 20
+         "default": 16
       },
       {
          "type": "range",
@@ -1356,381 +1712,242 @@ For inquiries or permissions, contact daniel@section.store
          "step": 1,
          "unit": "px",
          "label": "Card Border Thickness",
-         "default": 1
+         "default": 0
       },
       {
         "type": "checkbox",
         "id": "card_shadow",
         "label": "Use Card Shadow",
-        "default": false
+        "default": true
       },
       {
         "type": "header",
-        "content": "Card Media Settings"
-      },
-      {
-         "type": "range",
-         "id": "media_radius",
-         "min": 0,
-         "max": 100,
-         "step": 2,
-         "unit": "px",
-         "label": "Card Media Border Radius",
-         "default": 20
-      },
-      {
-         "type": "range",
-         "id": "media_border_thickness",
-         "min": 0,
-         "max": 10,
-         "step": 1,
-         "unit": "px",
-         "label": "Card Media Border Thickness",
-         "default": 0
-      },
-      {
-        "type": "select",
-        "id": "media_ratio",
-        "label": "Card Media Aspect Ratio",
-        "default": "square",
-        "options": [
-          {
-            "label": "Small Portrait",
-            "value": "portrait"
-          },
-          {
-            "label": "Big Portrait",
-            "value": "big_portrait"
-          },
-          {
-            "label": "Square",
-            "value": "square"
-          },
-          {
-            "label": "Landscape",
-            "value": "landscape"
-          },
-          {
-            "label": "Original",
-            "value": "original"
-          }
-        ]
-      },
-      {
-        "type": "select",
-        "id": "media_ratio_mobile",
-        "label": "Card Media Aspect Ratio - Mobile",
-        "default": "square",
-        "options": [
-          {
-            "label": "Small Portrait",
-            "value": "portrait"
-          },
-          {
-            "label": "Big Portrait",
-            "value": "big_portrait"
-          },
-          {
-            "label": "Square",
-            "value": "square"
-          },
-          {
-            "label": "Landscape",
-            "value": "landscape"
-          },
-          {
-            "label": "Original",
-            "value": "original"
-          }
-        ]
-      },
-      {
-        "type": "header",
-        "content": "Card Contet Settings"
-      },
-      {
-        "type": "range",
-        "id": "content_padding_vertical",
-        "min": 0,
-        "max": 100,
-        "step": 2,
-        "unit": "px",
-        "label": "Content Padding Vertical",
-        "default": 0
-      },
-      {
-        "type": "range",
-        "id": "content_padding_vertical_mobile",
-        "min": 0,
-        "max": 100,
-        "step": 2,
-        "unit": "px",
-        "label": "Content Padding Vertical - Mobile",
-        "default": 0
-      },
-      {
-         "type": "range",
-         "id": "content_padding_horizontal",
-         "min": 0,
-         "max": 100,
-         "step": 2,
-         "unit": "px",
-         "label": "Content Padding Horizontal",
-         "default": 0
-      },
-      {
-         "type": "range",
-         "id": "content_padding_horizontal_mobile",
-         "min": 0,
-         "max": 100,
-         "step": 2,
-         "unit": "px",
-         "label": "Content Padding Horizontal - Mobile",
-         "default": 0
+        "content": "Card Heading"
       },
       {
         "type": "checkbox",
-        "id": "hide_content",
-        "label": "Hide Content"
-      },
-      {
-        "type": "header",
-        "content": "Card Stars Settings"
-      },
-      {
-        "type": "image_picker",
-        "label": "Stars Icon",
-        "id": "stars_icon",
-        "info": "Replaces the default stars icon"
-      },
-      {
-        "type": "range",
-        "id": "stars_size",
-        "min": 10,
-        "max": 100,
-        "step": 2,
-        "label": "Stars Size",
-        "default": 16
-      },
-      {
-        "type": "range",
-        "id": "stars_mt",
-        "min": 0,
-        "max": 100,
-        "step": 2,
-        "unit": "px",
-        "label": "Stars Margin Top",
-        "default": 12
-      },
-      {
-        "type": "select",
-        "id": "stars_align",
-        "label": "Stars Align",
-        "default": "center",
-        "options": [
-          {
-            "label": "Left",
-            "value": "start"
-          },
-          {
-            "label": "Center",
-            "value": "center"
-          },
-          {
-            "label": "Right",
-            "value": "end"
-          }
-        ]
-      },
-      {
-        "type": "select",
-        "id": "stars_align_mobile",
-        "label": "Stars Align - Mobile",
-        "default": "center",
-        "options": [
-          {
-            "label": "Left",
-            "value": "start"
-          },
-          {
-            "label": "Center",
-            "value": "center"
-          },
-          {
-            "label": "Right",
-            "value": "end"
-          }
-        ]
-      },
-      {
-        "type": "header",
-        "content": "Card Text Settings"
-      },
-      {
-        "type": "checkbox",
-        "id": "text_custom",
+        "id": "card_heading_custom",
         "label": "Use Custom Font",
         "default": false
       },
       {
         "type": "font_picker",
-        "id": "text_font",
+        "id": "card_heading_font",
+        "label": "Card Heading Font Family",
+        "default": "josefin_sans_n4"
+      },
+      {
+        "type": "range",
+        "id": "card_heading_size",
+        "min": 0,
+        "max": 72,
+        "step": 2,
+        "unit": "px",
+        "label": "Card Heading Size",
+        "default": 24
+      },
+      {
+        "type": "range",
+        "id": "card_heading_size_mobile",
+        "min": 0,
+        "max": 72,
+        "step": 2,
+        "unit": "px",
+        "label": "Card Heading Size - Mobile",
+        "default": 20
+      },
+      {
+        "type": "range",
+        "id": "card_heading_height",
+        "min": 50,
+        "max": 200,
+        "step": 10,
+        "unit": "%",
+        "label": "Card Heading Line Height",
+        "default": 130
+      },
+      {
+        "type": "select",
+        "id": "card_heading_align",
+        "label": "Card Heading Align",
+        "default": "center",
+        "options": [
+          {
+            "label": "Left",
+            "value": "left"
+          },
+          {
+            "label": "Center",
+            "value": "center"
+          },
+          {
+            "label": "Right",
+            "value": "right"
+          }
+        ]
+      },
+      {
+        "type": "range",
+        "id": "card_heading_mt",
+        "min": 0,
+        "max": 100,
+        "step": 4,
+        "unit": "px",
+        "label": "Card Heading Margin Top",
+        "default": 16
+      },
+      {
+        "type": "header",
+        "content": "Card Text"
+      },
+      {
+        "type": "checkbox",
+        "id": "card_text_custom",
+        "label": "Use Custom Font",
+        "default": false
+      },
+      {
+        "type": "font_picker",
+        "id": "card_text_font",
         "label": "Card Text Font Family",
         "default": "josefin_sans_n4"
       },
       {
         "type": "range",
-        "id": "text_size",
+        "id": "card_text_size",
         "min": 0,
         "max": 72,
         "step": 2,
         "unit": "px",
         "label": "Card Text Size",
-        "default": 16
+        "default": 14
       },
       {
         "type": "range",
-        "id": "text_size_mobile",
+        "id": "card_text_size_mobile",
         "min": 0,
         "max": 72,
         "step": 2,
         "unit": "px",
         "label": "Card Text Size - Mobile",
-        "default": 16
+        "default": 14
       },
       {
         "type": "range",
-        "id": "text_height",
+        "id": "card_text_height",
         "min": 50,
         "max": 200,
         "step": 10,
         "unit": "%",
         "label": "Card Text Line Height",
-        "default": 130
+        "default": 150
+      },
+      {
+        "type": "select",
+        "id": "card_text_align",
+        "label": "Card Text Align",
+        "default": "center",
+        "options": [
+          {
+            "label": "Left",
+            "value": "left"
+          },
+          {
+            "label": "Center",
+            "value": "center"
+          },
+          {
+            "label": "Right",
+            "value": "right"
+          }
+        ]
       },
       {
         "type": "range",
-        "id": "text_mt",
+        "id": "card_text_mt",
         "min": 0,
         "max": 100,
-        "step": 2,
+        "step": 4,
         "unit": "px",
         "label": "Card Text Margin Top",
-        "default": 12
+        "default": 16
       },
       {
-        "type": "text_alignment",
-        "id": "text_align",
-        "label": "Card Text Align",
-        "default": "center"
+        "type": "text",
+        "id": "card_text_more",
+        "label": "Card Text More",
+        "default": "View More"
       },
       {
-        "type": "text_alignment",
-        "id": "text_align_mobile",
-        "label": "Card Text Align - Mobile",
-        "default": "center"
+        "type": "text",
+        "id": "card_text_less",
+        "label": "Card Text Less",
+        "default": "View Less"
+      },
+      {
+        "type": "range",
+        "id": "card_count_words",
+        "min": 5,
+        "max": 40,
+        "step": 1,
+        "label": "Count Words Before 'More Button'",
+        "default": 20
       },
       {
         "type": "header",
-        "content": "Card Author Settings"
+        "content": "Card Author-Date Text"
       },
       {
         "type": "checkbox",
-        "id": "author_custom",
+        "id": "card_author_date_text_custom",
         "label": "Use Custom Font",
         "default": false
       },
       {
         "type": "font_picker",
-        "id": "author_font",
-        "label": "Card Author Font Family",
+        "id": "card_author_date_text_font",
+        "label": "Card Author-Date Text Font Family",
         "default": "josefin_sans_n4"
       },
       {
         "type": "range",
-        "id": "author_size",
+        "id": "card_author_date_text_size",
         "min": 0,
         "max": 72,
         "step": 2,
         "unit": "px",
-        "label": "Card Author Size",
-        "default": 14
+        "label": "Card Author-Date Text Size",
+        "default": 16
       },
       {
         "type": "range",
-        "id": "author_size_mobile",
+        "id": "card_author_date_text_size_mobile",
         "min": 0,
         "max": 72,
         "step": 2,
         "unit": "px",
-        "label": "Card Author Size - Mobile",
-        "default": 14
+        "label": "Card Author-Date Text Size - Mobile",
+        "default": 16
       },
       {
         "type": "range",
-        "id": "author_height",
+        "id": "card_author_date_text_height",
         "min": 50,
         "max": 200,
         "step": 10,
         "unit": "%",
-        "label": "Card Author Line Height",
+        "label": "Card Author-Date Text Line Height",
         "default": 130
       },
       {
-        "type": "range",
-        "id": "author_mt",
-        "min": 0,
-        "max": 100,
-        "step": 2,
-        "unit": "px",
-        "label": "Card Author Margin Top",
-        "default": 12
-      },
-      {
-        "type": "text_alignment",
-        "id": "author_align",
-        "label": "Card Author Text Align",
-        "default": "center"
-      },
-      {
-        "type": "text_alignment",
-        "id": "author_align_mobile",
-        "label": "Card Author Text Align - Mobile",
-        "default": "center"
-      },
-      {
-        "type": "header",
-        "content": "Navigation Settings"
-      },
-      {
-        "type": "range",
-        "id": "navigation_mt",
-        "min": 0,
-        "max": 100,
-        "step": 2,
-        "unit": "px",
-        "label": "Navigation Margin Top",
-        "default": 40
-      },
-      {
-        "type": "range",
-        "id": "navigation_gap",
-        "min": 0,
-        "max": 100,
-        "step": 2,
-        "unit": "px",
-        "label": "Navigation Gap",
-        "default": 20
-      },
-      {
         "type": "select",
-        "id": "navigation_align",
-        "label": "Navigation Align",
+        "id": "card_author_date_text_align",
+        "label": "Card Author-Date Text Align",
         "default": "center",
         "options": [
           {
             "label": "Left",
-            "value": "start"
+            "value": "left"
           },
           {
             "label": "Center",
@@ -1738,43 +1955,23 @@ For inquiries or permissions, contact daniel@section.store
           },
           {
             "label": "Right",
-            "value": "end"
+            "value": "right"
           }
         ]
       },
       {
-        "type": "select",
-        "id": "navigation_align_mobile",
-        "label": "Navigation Align - Mobile",
-        "default": "center",
-        "options": [
-          {
-            "label": "Left",
-            "value": "start"
-          },
-          {
-            "label": "Center",
-            "value": "center"
-          },
-          {
-            "label": "Right",
-            "value": "end"
-          }
-        ]
+        "type": "range",
+        "id": "card_author_date_text_mt",
+        "min": 0,
+        "max": 100,
+        "step": 4,
+        "unit": "px",
+        "label": "Card Author-Date Text Margin Top",
+        "default": 16
       },
       {
         "type": "header",
         "content": "Arrow Settings"
-      },
-      {
-        "type": "image_picker",
-        "id": "arrow_left",
-        "label": "Custom Arrow Backwards"
-      },
-      {
-        "type": "image_picker",
-        "id": "arrow_right",
-        "label": "Custom Arrow Forwards"
       },
       {
         "type": "range",
@@ -1795,6 +1992,36 @@ For inquiries or permissions, contact daniel@section.store
         "unit": "px",
         "label": "Arrow Size - Mobile",
         "default": 50
+      },
+      {
+        "type": "range",
+        "id": "arrow_icon_size",
+        "min": 10,
+        "max": 50,
+        "step": 2,
+        "unit": "px",
+        "label": "Arrow Icon Size",
+        "default": 28
+      },
+      {
+        "type": "range",
+        "id": "arrow_icon_size_mobile",
+        "min": 10,
+        "max": 50,
+        "step": 2,
+        "unit": "px",
+        "label": "Arrow Icon Size - Mobile",
+        "default": 28
+      },
+      {
+        "type": "range",
+        "id": "arrow_border_thickness",
+        "min": 0,
+        "max": 10,
+        "step": 1,
+        "unit": "px",
+        "label": "Arrow Border Thickness",
+        "default": 0
       },
       {
         "type": "checkbox",
@@ -1820,7 +2047,7 @@ For inquiries or permissions, contact daniel@section.store
         "step": 1,
         "unit": "px",
         "label": "Dots Size",
-        "default": 10
+        "default": 12
       },
       {
         "type": "range",
@@ -1830,7 +2057,7 @@ For inquiries or permissions, contact daniel@section.store
         "step": 1,
         "unit": "px",
         "label": "Dots Size - Mobile",
-        "default": 10
+        "default": 12
       },
       {
         "type": "checkbox",
@@ -1842,36 +2069,174 @@ For inquiries or permissions, contact daniel@section.store
         "type": "checkbox",
         "id": "dots_show_mobile",
         "label": "Show on Mobile",
-        "default": true
+        "default": false
       },
-       {
+      {
         "type": "header",
-        "content": "Card Video Play Button Settings"
+        "content": "Button"
       },
       {
-        "type": "image_picker",
-        "id": "btn_icon",
-        "label": "Button Icon Play"
+        "type": "text",
+        "id": "button",
+        "label": "Button",
+        "default": "View All"
+      },
+      {
+        "type": "url",
+        "id": "button_url",
+        "label": "Button URL"
+      },
+      {
+        "type": "checkbox",
+        "id": "button_custom",
+        "label": "Use Custom Font",
+        "default": false
+      },
+      {
+        "type": "font_picker",
+        "id": "button_font",
+        "label": "Button Font Family",
+        "default": "josefin_sans_n4"
       },
       {
         "type": "range",
-        "id": "btn_icon_size",
+        "id": "button_size",
         "min": 0,
-        "max": 150,
-        "step": 10,
+        "max": 72,
+        "step": 2,
         "unit": "px",
-        "label": "Button Icon Size",
-        "default": 50
+        "label": "Button Size",
+        "default": 16
       },
       {
         "type": "range",
-        "id": "btn_icon_size_mobile",
+        "id": "button_size_mobile",
         "min": 0,
-        "max": 150,
-        "step": 10,
+        "max": 72,
+        "step": 2,
         "unit": "px",
-        "label": "Button Icon Size - Mobile",
-        "default": 40
+        "label": "Button Size - Mobile",
+        "default": 14
+      },
+      {
+        "type": "range",
+        "id": "button_height",
+        "min": 50,
+        "max": 200,
+        "step": 10,
+        "unit": "%",
+        "label": "Button Line Height",
+        "default": 100
+      },
+      {
+        "type": "select",
+        "id": "button_align",
+        "label": "Button Text Align",
+        "default": "center",
+        "options": [
+          {
+            "label": "Left",
+            "value": "left"
+          },
+          {
+            "label": "Center",
+            "value": "center"
+          },
+          {
+            "label": "Right",
+            "value": "right"
+          }
+        ]
+      },
+      {
+        "type": "range",
+        "id": "button_mt",
+        "min": 0,
+        "max": 100,
+        "step": 4,
+        "unit": "px",
+        "label": "Button Margin Top",
+        "default": 16
+      },
+      {
+        "type": "range",
+        "id": "button_padding_vertical",
+        "min": 0,
+        "max": 100,
+        "step": 4,
+        "unit": "px",
+        "label": "Button Padding Vertical",
+        "default": 20
+      },
+      {
+         "type": "range",
+         "id": "button_padding_horizontal",
+         "min": 0,
+         "max": 100,
+         "step": 4,
+         "unit": "px",
+         "label": "Button Padding Horizontal",
+         "default": 16
+      },
+      {
+         "type": "range",
+         "id": "button_radius",
+         "min": 0,
+         "max": 100,
+         "step": 2,
+         "unit": "px",
+         "label": "Button Border Radius",
+         "default": 8
+      },
+      {
+         "type": "range",
+         "id": "button_border_thickness",
+         "min": 0,
+         "max": 10,
+         "step": 1,
+         "unit": "px",
+         "label": "Button Border Thickness",
+         "default": 0
+      },
+      {
+        "type": "header",
+        "content": "Button Colors"
+      },
+      {
+        "type": "color",
+        "label": "Button Color",
+        "id": "button_color",
+        "default": "#FFFFFF"
+      },
+      {
+        "type": "color",
+        "label": "Button Hover Color",
+        "id": "button_hover_color",
+        "default": "#FFFFFF"
+      },
+      {
+        "type": "color",
+        "label": "Button Background Color",
+        "id": "button_bg_color",
+        "default": "#000000"
+      },
+      {
+        "type": "color",
+        "label": "Button Background Hover Color",
+        "id": "button_bg_hover_color",
+        "default": "#000000"
+      },
+      {
+        "type": "color",
+        "label": "Button Border Color",
+        "id": "button_border_color",
+        "default": "#000000"
+      },
+      {
+        "type": "color",
+        "label": "Button Border Hover Color",
+        "id": "button_border_hover_color",
+        "default": "#000000"
       },
       {
         "type": "header",
@@ -1884,56 +2249,33 @@ For inquiries or permissions, contact daniel@section.store
         "default": "#FFFFFF"
       },
       {
-        "type": "color_background",
-        "label": "Card Background Gradient",
-        "id": "card_bg_gradient"
-      },
-      {
         "type": "color",
         "label": "Card Border Color",
         "id": "card_border_color",
-        "default": "#DEDBC4"
+        "default": "#000000"
       },
       {
         "type": "color",
         "label": "Card Shadow Color",
         "id": "card_shadow_color",
-        "default": "#000000"
+        "default": "#00B67A"
       },
       {
         "type": "color",
-        "label": "Card Media Border Color",
-        "id": "media_border_color",
+        "label": "Card Heading Color",
+        "id": "card_heading_color",
         "default": "#000000"
-      },
-      {
-        "type": "color",
-        "label": "Card Stars Color",
-        "id": "stars_color",
-        "default": "#323232"
       },
       {
         "type": "color",
         "label": "Card Text Color",
-        "id": "text_color",
-        "default": "#323232"
+        "id": "card_text_color",
+        "default": "#000000"
       },
       {
         "type": "color",
-        "label": "Card Author Color",
-        "id": "author_color",
-        "default": "#323232"
-      },
-      {
-        "type": "color",
-        "id": "video_icon_bg_color",
-        "label": "Card Video Icon Background Color",
-        "default": "#FFFFFF"
-      },
-      {
-        "type": "color",
-        "id": "video_icon_color",
-        "label": "Card Video Icon Color",
+        "label": "Card Author-Date Text Color",
+        "id": "card_author_date_text_color",
         "default": "#000000"
       },
       {
@@ -1944,19 +2286,43 @@ For inquiries or permissions, contact daniel@section.store
         "type": "color",
         "label": "Arrow color",
         "id": "arrow_color",
-        "default": "#837c5c"
+        "default": "#000000"
       },
       {
         "type": "color",
         "label": "Arrow Hover color",
         "id": "arrow_hover_color",
-        "default": "#837c5c"
+        "default": "#000000"
+      },
+      {
+        "type": "color",
+        "label": "Arrow Background color",
+        "id": "arrow_bg_color",
+        "default": "#FFFFFF"
+      },
+      {
+        "type": "color",
+        "label": "Arrow Background Hover color",
+        "id": "arrow_bg_hover_color",
+        "default": "#FFFFFF"
+      },
+      {
+        "type": "color",
+        "label": "Arrow Border color",
+        "id": "arrow_border_color",
+        "default": "#FFFFFF"
+      },
+      {
+        "type": "color",
+        "label": "Arrow Border Hover color",
+        "id": "arrow_border_hover_color",
+        "default": "#FFFFFF"
       },
       {
         "type": "color",
         "label": "Dots Color",
         "id": "dots_color",
-        "default": "#837c5c"
+        "default": "#000000"
       },
       {
         "type": "header",
@@ -1966,24 +2332,43 @@ For inquiries or permissions, contact daniel@section.store
         "type": "color",
         "label": "Heading Color",
         "id": "heading_color",
-        "default": "#837c5c"
+        "default": "#000000"
       },
       {
         "type": "color",
-        "label": "Sub-Heading Color",
-        "id": "sub_heading_color",
-        "default": "#837c5c"
+        "label": "Rating Text Color",
+        "id": "rating_text_color",
+        "default": "#000000"
+      },
+      {
+        "type": "color",
+        "label": "Default Stars Background Color",
+        "id": "stars_bg_color",
+        "default": "#00B67A"
+      },
+      {
+        "type": "color",
+        "label": "Default Stars Color",
+        "id": "stars_color",
+        "default": "#FFFFFF"
+      },
+      {
+        "type": "color",
+        "label": "Text Color",
+        "id": "text_color",
+        "default": "#000000"
       },
       {
         "type": "color",
         "label": "Section background",
         "id": "background_color",
-        "default": "#F6F5F2"
+        "default": "#FFFFFF"
       },
       {
         "type": "color_background",
         "id": "background_gradient",
-        "label": "Section background gradient"
+        "label": "Section background gradient",
+        "default": "linear-gradient(180deg, rgba(206, 239, 199, 1), rgba(255, 255, 255, 1) 100%)"
       },
       {
         "type": "color",
@@ -2027,7 +2412,7 @@ For inquiries or permissions, contact daniel@section.store
         "step": 4,
         "unit": "px",
         "label": "Padding top",
-        "default": 36
+        "default": 60
       },
       {
          "type": "range",
@@ -2037,7 +2422,7 @@ For inquiries or permissions, contact daniel@section.store
          "step": 4,
          "unit": "px",
          "label": "Padding bottom",
-         "default": 36
+         "default": 60
       },
       {
         "type": "range",
@@ -2047,7 +2432,7 @@ For inquiries or permissions, contact daniel@section.store
         "step": 1,
         "unit": "rem",
         "label": "Padding sides",
-        "default": 0
+        "default": 5
       },
       {
         "type": "range",
@@ -2057,7 +2442,7 @@ For inquiries or permissions, contact daniel@section.store
         "step": 0.5,
         "unit": "rem",
         "label": "Padding sides mobile",
-        "default": 0
+        "default": 1.5
       },
       {
         "type": "header",
@@ -2103,55 +2488,6 @@ For inquiries or permissions, contact daniel@section.store
         "name": "Slide",
         "settings": [
           {
-            "type": "select",
-            "id": "media_style",
-            "label": "Media Style",
-            "default": "image",
-            "options": [
-              {
-                "label": "Image",
-                "value": "image"
-              },
-              {
-                "label": "Video",
-                "value": "video"
-              },
-              {
-                "label": "None",
-                "value": "none"
-              }
-            ]
-          },
-          {
-            "type": "image_picker",
-            "id": "image",
-            "label": "Image"
-          },
-          {
-            "type": "video",
-            "id": "video",
-            "label": "Video from Shopify"
-          },
-          {
-            "type": "video_url",
-            "id": "video_url",
-            "label": "Video Embed from Url",
-            "accept": ["youtube", "vimeo"],
-            "default": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-            "info": "Shows when no Shopify-hosted video is selected."
-          },
-          {
-            "type": "checkbox",
-            "id": "controls",
-            "label": "Enable Video Player Controls"
-          },
-          {
-            "type": "image_picker",
-            "id": "poster",
-            "label": "Thumbnail image for Shopify-hosted video",
-            "info":"Use when autoplay is turned off to remove blurry image"
-          },
-          {
             "type": "range",
             "id": "stars_count",
             "min": 0,
@@ -2161,71 +2497,73 @@ For inquiries or permissions, contact daniel@section.store
             "default": 5
           },
           {
-            "type": "richtext",
-            "id": "text",
-            "label": "Text",
-            "default": "<p>Text</p>"
+            "type": "text",
+            "id": "heading",
+            "label": "Heading"
           },
           {
-            "type": "richtext",
-            "id": "author",
-            "label": "Author",
-            "default": "<p>Author</p>"
+            "type": "text",
+            "id": "text",
+            "label": "Text"
+          },
+          {
+            "type": "text",
+            "id": "author_date",
+            "label": "Author and Date"
           }
         ]
       }
     ],
     "presets": [
       {
-        "name": "SS - Testimonials #12",
+        "name": "SS - Testimonial #8",
         "blocks": [
           {
             "type": "slide",
             "settings": {
-              "text": "<p>the perfect candle replacement, obsessed with the lamps!</p>",
-              "author": "<p><strong>@tracer</strong></p>"
+              "heading": "I love it! 😍",
+              "text": "I was initially hesitant to switch from my usual brand to this new one, but I'm so glad I did! This product has exceeded my expectations. It's not only affordable but also incredibly efficient. The quality is top-notch, and it's user-friendly.",
+              "author_date": "Cathrine"
             }
           },
           {
             "type": "slide",
             "settings": {
-              "text": "<p>Our kids bring them everywhere, specially when doing puzzles and drawings</p>",
-              "author": "<p><strong>@theworldisyours</strong></p>"
+              "heading": "I love it! 😍",
+              "text": "I was initially hesitant to switch from my usual brand to this new one, but I'm so glad I did! This product has exceeded my expectations. It's not only affordable but also incredibly efficient. The quality is top-notch, and it's user-friendly.",
+              "author_date": "Cathrine"
             }
           },
           {
             "type": "slide",
             "settings": {
-              "text": "<p>This is the brand to go for lamps, love the quality and design, as always you get what you pay</p>",
-              "author": "<p><strong>@niels_homes</strong></p>"
+              "heading": "I love it! 😍",
+              "text": "I was initially hesitant to switch from my usual brand to this new one, but I'm so glad I did! This product has exceeded my expectations. It's not only affordable but also incredibly efficient. The quality is top-notch, and it's user-friendly.",
+              "author_date": "Cathrine"
             }
           },
           {
             "type": "slide",
             "settings": {
-              "text": "<p>Love them, they give the perfect luxury touch to any room</p>",
-              "author": "<p><strong>@allfinds</strong></p>"
+              "heading": "I love it! 😍",
+              "text": "I was initially hesitant to switch from my usual brand to this new one, but I'm so glad I did! This product has exceeded my expectations. It's not only affordable but also incredibly efficient. The quality is top-notch, and it's user-friendly.",
+              "author_date": "Cathrine"
             }
           },
           {
             "type": "slide",
             "settings": {
-              "text": "<p>The cordless lamp you've been looking for!</p>",
-              "author": "<p><strong>@lacey</strong></p>"
+              "heading": "I love it! 😍",
+              "text": "I was initially hesitant to switch from my usual brand to this new one, but I'm so glad I did! This product has exceeded my expectations. It's not only affordable but also incredibly efficient. The quality is top-notch, and it's user-friendly.",
+              "author_date": "Cathrine"
             }
           },
           {
             "type": "slide",
             "settings": {
-              "text": "<p>All my friends want them too now, at least I was the first one to get them..!</p>",
-              "author": "<p><strong>@mcqueen</strong></p>"
-            }
-          },
-          {
-            "type": "slide",
-            "settings": {
-              "text": "<p>I use it every day early in the morning and on our dining table, it is do convenient and cool</p>",
-              "author": "<p><strong>@dwithpatty</strong></p>"
+              "heading": "I love it! 😍",
+              "text": "I was initially hesitant to switch from my usual brand to this new one, but I'm so glad I did! This product has exceeded my expectations. It's not only affordable but also incredibly efficient. The quality is top-notch, and it's user-friendly.",
+              "author_date": "Cathrine"
             }
           }
         ]

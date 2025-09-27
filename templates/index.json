@@ -869,10 +869,11 @@
         "item_yMYg88": {
           "type": "item",
           "settings": {
+            "image": "shopify://shop_images/26_6d97b46d-d342-4d2f-873c-e2ed0022e34e.png",
             "column_size": "3",
-            "title": "Column title",
+            "title": "Dormitori sulla Pancia",
             "heading_tag": "h4",
-            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "content": "<p>Troppi cuscini ti comprimono la nuca o bloccano le tue braccia? <br/>Con Cervium™, i contorni a farfalla stabilizzano la tua testa liberando completamente la respirazione.</p><p><strong>Risultato:</strong> postura naturale, muscoli rilassati, notti tranquille.</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"

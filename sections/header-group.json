@@ -20,17 +20,33 @@
             "text": "Un Settembre Di Saldi Fino al -60% + Federa Gratis",
             "url": ""
           }
+        },
+        "message_KfLQhM": {
+          "type": "message",
+          "settings": {
+            "text": "Un Settembre Di Saldi Fino al -60% + Federa Gratis",
+            "url": ""
+          }
+        },
+        "message_FNkLHH": {
+          "type": "message",
+          "settings": {
+            "text": "Announce something here",
+            "url": ""
+          }
         }
       },
       "block_order": [
-        "message"
+        "message",
+        "message_KfLQhM",
+        "message_FNkLHH"
       ],
       "settings": {
         "enable_sticky": false,
         "autoplay": false,
         "cycle_speed": 6,
         "text_size": "text-base",
-        "navigation_mode": "scrolling",
+        "navigation_mode": "arrows",
         "scrolling_speed": 10,
         "background": "#303d66",
         "background_gradient": "",
@@ -42,7 +58,7 @@
       "settings": {
         "enable_sticky": true,
         "hide_on_scroll": false,
-        "logo": "shopify://shop_images/CERVIUM_4.webp",
+        "logo": "shopify://shop_images/CERVIUM_5.webp",
         "logo_max_width": 300,
         "logo_mobile_max_width": 170,
         "menu": "main-menu",
@@ -57,7 +73,7 @@
         "show_country_flag": true,
         "show_country_name": false,
         "transparent_header_text_color": "#ffffff",
-        "reduce_padding": false,
+        "reduce_padding": true,
         "background_opacity": 100,
         "background_blur_radius": 0
       }

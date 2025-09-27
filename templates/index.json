@@ -11,13 +11,33 @@
   "sections": {
     "image_with_text_overlay_BEF8MD": {
       "type": "image-with-text-overlay",
+      "blocks": {
+        "heading_QQGe6z": {
+          "type": "heading",
+          "settings": {
+            "text": "Dormi senza dolore come mai prima d'ora",
+            "heading_tag": "h1"
+          }
+        },
+        "richtext_dtHYgU": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Da Cervium, tecnologia brevettata per il tuo miglior sonno di sempre.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_QQGe6z",
+        "richtext_dtHYgU"
+      ],
       "name": "Image with text overlay",
       "settings": {
         "full_width": true,
         "allow_transparent_header": false,
         "enable_parallax": false,
         "image_size": "auto",
-        "image": "shopify://shop_images/Design_sans_titre_15.jpg",
+        "image": "shopify://shop_images/Home_page_banner_45_year_old_mobile_version.png",
+        "mobile_image": "shopify://shop_images/CERVIUM_1.webp",
         "mobile_text_position": "place-self-center text-center",
         "desktop_text_position": "sm:place-self-center sm:text-center",
         "text_color": "#ffffff",

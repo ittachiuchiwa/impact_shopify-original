@@ -352,6 +352,68 @@
         "overlay_opacity": 0
       }
     },
+    "multi_column_KrE9UX": {
+      "type": "multi-column",
+      "blocks": {
+        "item_F4Edaf": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/4_3fe1426a-d52c-4c43-91dc-bb0a169eb5c8.png",
+            "column_size": "3",
+            "title": "Dormitori sul Fianco",
+            "heading_tag": "h4",
+            "content": "<p>La posizione preferita da milioni di dormitori. Grazie ai contorni laterali di Cervium™, la tua testa resta perfettamente allineata e le tue braccia trovano finalmente il loro posto senza creare tensione</p><p><strong>Risultato:</strong> nuque soulagée, épaules détendues, sommeil profond garanti.<br/></p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_yMYg88": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/26_6d97b46d-d342-4d2f-873c-e2ed0022e34e.png",
+            "column_size": "3",
+            "title": "Dormitori sulla Pancia",
+            "heading_tag": "h4",
+            "content": "<p>Troppi cuscini ti comprimono la nuca o bloccano le tue braccia? <br/>Con Cervium™, i contorni a farfalla stabilizzano la tua testa liberando completamente la respirazione.</p><p><strong>Risultato:</strong> postura naturale, muscoli rilassati, notti tranquille.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_JXLHGE": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/27_4c149a63-5095-4e3d-a8b7-c84a1e3edc7b_2.png",
+            "column_size": "3",
+            "title": "Dormitori sulla Schiena",
+            "heading_tag": "h4",
+            "content": "<p>Posiziona semplicemente la tua testa al centro della Cervium™ ultra-morbido. La tua nuca è perfettamente sostenuta, le tue vertebre cervicali riallineate.</p><p><strong>Risultato:</strong> risvegli senza rigidità, colonna rilassata, miglior postura nel lungo termine.<br/></p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "item_F4Edaf",
+        "item_yMYg88",
+        "item_JXLHGE"
+      ],
+      "name": "Multi-column",
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "medium",
+        "text_alignment": "center",
+        "subheading": "",
+        "title": "Dormire bene significa vivere meglio: più energia, più concentrazione, più serenità",
+        "content": "",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
     "impact-text": {
       "type": "impact-text",
       "blocks": {
@@ -850,63 +912,14 @@
         "accordion_text_color": ""
       }
     },
-    "multi_column_KrE9UX": {
-      "type": "multi-column",
-      "blocks": {
-        "item_F4Edaf": {
-          "type": "item",
-          "settings": {
-            "image": "shopify://shop_images/4_3fe1426a-d52c-4c43-91dc-bb0a169eb5c8.png",
-            "column_size": "3",
-            "title": "Dormitori sul Fianco",
-            "heading_tag": "h4",
-            "content": "<p>La posizione preferita da milioni di dormitori. Grazie ai contorni laterali di Cervium™, la tua testa resta perfettamente allineata e le tue braccia trovano finalmente il loro posto senza creare tensione</p><p><strong>Risultato:</strong> nuque soulagée, épaules détendues, sommeil profond garanti.<br/></p>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        },
-        "item_yMYg88": {
-          "type": "item",
-          "settings": {
-            "image": "shopify://shop_images/26_6d97b46d-d342-4d2f-873c-e2ed0022e34e.png",
-            "column_size": "3",
-            "title": "Dormitori sulla Pancia",
-            "heading_tag": "h4",
-            "content": "<p>Troppi cuscini ti comprimono la nuca o bloccano le tue braccia? <br/>Con Cervium™, i contorni a farfalla stabilizzano la tua testa liberando completamente la respirazione.</p><p><strong>Risultato:</strong> postura naturale, muscoli rilassati, notti tranquille.</p>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        },
-        "item_JXLHGE": {
-          "type": "item",
-          "settings": {
-            "image": "shopify://shop_images/27_4c149a63-5095-4e3d-a8b7-c84a1e3edc7b_2.png",
-            "column_size": "3",
-            "title": "Dormitori sulla Schiena",
-            "heading_tag": "h4",
-            "content": "<p>Posiziona semplicemente la tua testa al centro della Cervium™ ultra-morbido. La tua nuca è perfettamente sostenuta, le tue vertebre cervicali riallineate.</p><p><strong>Risultato:</strong> risvegli senza rigidità, colonna rilassata, miglior postura nel lungo termine.<br/></p>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        }
-      },
-      "block_order": [
-        "item_F4Edaf",
-        "item_yMYg88",
-        "item_JXLHGE"
-      ],
-      "name": "Multi-column",
+    "custom_liquid_ttRqjL": {
+      "type": "custom-liquid",
+      "name": "Custom Liquid",
       "settings": {
         "full_width": true,
-        "stack_on_mobile": false,
-        "gap": "medium",
-        "text_alignment": "center",
-        "subheading": "About",
-        "title": "Featured content",
-        "content": "<p>Organize content into multiple columns to share useful information to your customers about your products, values...</p>",
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "liquid": "<div style=\"background-color: #ffffff; padding: 2rem 0; text-align: center;\">\n  <h2 style=\"font-size: 1.3rem; font-weight: 700; margin-bottom: 1rem;\">\n    I nostri clienti ne parlano meglio\n  </h2>\n  <div style=\"font-size: 1.2rem; margin-bottom: 0.5rem; display: flex; justify-content: center; align-items: center; gap: 8px; flex-wrap: wrap;\">\n    <span>Eccellente <strong>4.7 / 5</strong></span>\n    <!-- Image Trustpilot pour 4.7 étoiles -->\n    <img\n      src=\"https://cdn.trustpilot.net/brand-assets/4.1.0/stars/stars-4.5.svg\"\n      alt=\"4.7 stelle\"\n      style=\"height: 24px; width: auto; vertical-align: middle;\"\n    >\n  </div>\n  <div style=\"font-size: 1rem; color: #000; display: flex; justify-content: center; align-items: center; gap: 6px;\">\n    <span>basato su <span style=\"text-decoration: underline;\"><strong>+3.191</strong></span> recensioni</span>\n    <!-- Logo Trustpilot officiel -->\n    <span style=\"display: flex; align-items: center; gap: 4px;\">\n      <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" viewBox=\"0 0 24 24\">\n        <path fill=\"#00B67A\" d=\"M12 .587l3.668 7.568 8.332 1.151-6.001 5.837 1.417 8.293L12 18.896l-7.416 4.54 1.417-8.293-6.001-5.837 8.332-1.151z\"/>\n      </svg>\n      <span style=\"font-weight: 500;\">Trustpilot</span>\n    </span>\n  </div>\n</div>",
         "background": "#ffffff",
         "background_gradient": "",
         "text_color": ""
@@ -923,6 +936,8 @@
     "image_with_text_overlay_qkUi8H",
     "rich_text_MCJjwz",
     "image_with_text_overlay_CVchn6",
+    "custom_liquid_ttRqjL",
+    "multi_column_KrE9UX",
     "impact-text",
     "image-with-text-overlay",
     "media-grid",
@@ -931,7 +946,6 @@
     "hot-spots",
     "multiple-images-with-text",
     "featured-product",
-    "faq",
-    "multi_column_KrE9UX"
+    "faq"
   ]
 }

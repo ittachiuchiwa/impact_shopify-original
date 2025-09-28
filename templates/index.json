@@ -218,8 +218,8 @@
         "heading_xGnme4": {
           "type": "heading",
           "settings": {
-            "text": "DI ADDIO AL DOLORE CERVICALE!",
-            "heading_tag": "h1",
+            "text": "Dì addio al dolore cervicale!",
+            "heading_tag": "h4",
             "text_color": "",
             "gradient": ""
           }
@@ -296,7 +296,7 @@
           "type": "heading",
           "settings": {
             "text": "Proteggi il tuo collo con Cervium™",
-            "heading_tag": "h5",
+            "heading_tag": "h4",
             "text_color": "",
             "gradient": ""
           }
@@ -388,7 +388,7 @@
             "column_size": "3",
             "title": "Dormitori sul Fianco",
             "heading_tag": "h4",
-            "content": "<p>La posizione preferita da milioni di dormitori. Grazie ai contorni laterali di Cervium™, la tua testa resta perfettamente allineata e le tue braccia trovano finalmente il loro posto senza creare tensione</p><p><strong>Risultato:</strong> nuque soulagée, épaules détendues, sommeil profond garanti.<br/></p>",
+            "content": "<p>La posizione preferita da milioni di dormitori. Grazie ai contorni laterali di Cervium™, la tua testa resta perfettamente allineata e le tue braccia trovano finalmente il loro posto senza creare tensione</p><p><strong>Risultato :</strong> nuque soulagée, épaules détendues, sommeil profond garanti.<br/></p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -401,7 +401,7 @@
             "column_size": "3",
             "title": "Dormitori sulla Pancia",
             "heading_tag": "h4",
-            "content": "<p>Troppi cuscini ti comprimono la nuca o bloccano le tue braccia? <br/>Con Cervium™, i contorni a farfalla stabilizzano la tua testa liberando completamente la respirazione.</p><p><strong>Risultato:</strong> postura naturale, muscoli rilassati, notti tranquille.</p>",
+            "content": "<p>Troppi cuscini ti comprimono la nuca o bloccano le tue braccia? <br/>Con Cervium™, i contorni a farfalla stabilizzano la tua testa liberando completamente la respirazione.</p><p><strong>Risultato :</strong> postura naturale, muscoli rilassati, notti tranquille.</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -414,7 +414,7 @@
             "column_size": "3",
             "title": "Dormitori sulla Schiena",
             "heading_tag": "h4",
-            "content": "<p>Posiziona semplicemente la tua testa al centro della Cervium™ ultra-morbido. La tua nuca è perfettamente sostenuta, le tue vertebre cervicali riallineate.</p><p><strong>Risultato:</strong> risvegli senza rigidità, colonna rilassata, miglior postura nel lungo termine.<br/></p>",
+            "content": "<p>Posiziona semplicemente la tua testa al centro della Cervium™ ultra-morbido. La tua nuca è perfettamente sostenuta, le tue vertebre cervicali riallineate.</p><p><strong>Risultato :</strong> risvegli senza rigidità, colonna rilassata, miglior postura nel lungo termine.<br/></p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -546,6 +546,12 @@
           "disabled": true,
           "settings": {}
         },
+        "liquid_zKAXhg": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<style>\n    .unique-rating-container-Wsx456 {\n        display: flex;\n        align-items: center;\n        justify-content: center;\n        font-size: 14px;\n        color: #333;\n        padding: 1px 0;\n        gap: px;\n        flex-wrap: nowrap;\n    }\n    \n    .unique-rating-label-Xyz789 {\n        font-weight: 700;\n        color: #333;\n        white-space: nowrap;\n    }\n    \n    .unique-rating-stars-Edc789 {\n        display: flex;\n        gap: 2px;\n    }\n    \n    .unique-rating-stars-Edc789 svg {\n        fill: #00B67A;\n        width: 16px;\n        height: 16px;\n    }\n    \n    .unique-rating-score-Abc123 {\n        font-weight: 700;\n        color: #000;\n        white-space: nowrap;\n    }\n    \n    .unique-rating-count-Def456 {\n        color: #666;\n        white-space: nowrap;\n    }\n    \n    @media (max-width: 768px) {\n        .unique-rating-container-Wsx456 {\n            font-size: 12px;\n            gap: 6px;\n        }\n        .unique-rating-stars-Edc789 svg {\n            width: 14px;\n            height: 14px;\n        }\n    }\n</style>\n\n<div class=\"unique-rating-container-Wsx456\">\n    <span class=\"unique-rating-label-Xyz789\">\"Eccellente\"</span>\n    <div class=\"unique-rating-stars-Edc789\">\n        <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\"><path d=\"M12 .587l3.668 7.431 8.144 1.18-5.906 5.434 1.391 8.079L12 18.896l-7.297 3.843 1.391-8.079-5.906-5.434 8.144-1.18z\"/></svg>\n        <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\"><path d=\"M12 .587l3.668 7.431 8.144 1.18-5.906 5.434 1.391 8.079L12 18.896l-7.297 3.843 1.391-8.079-5.906-5.434 8.144-1.18z\"/></svg>\n        <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\"><path d=\"M12 .587l3.668 7.431 8.144 1.18-5.906 5.434 1.391 8.079L12 18.896l-7.297 3.843 1.391-8.079-5.906-5.434 8.144-1.18z\"/></svg>\n        <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\"><path d=\"M12 .587l3.668 7.431 8.144 1.18-5.906 5.434 1.391 8.079L12 18.896l-7.297 3.843 1.391-8.079-5.906-5.434 8.144-1.18z\"/></svg>\n        <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\"><path d=\"M12 .587l3.668 7.431 8.144 1.18-5.906 5.434 1.391 8.079L12 18.896l-7.297 3.843 1.391-8.079-5.906-5.434 8.144-1.18z\"/></svg>\n    </div>\n    <span class=\"unique-rating-score-Abc123\">4.8/5</span>\n    <span class=\"unique-rating-count-Def456\">| 17.750+ recensioni</span>\n</div>"
+          }
+        },
         "title_WyQ6cm": {
           "type": "title",
           "settings": {
@@ -569,10 +575,10 @@
             "show_empty": false
           }
         },
-        "liquid_zKAXhg": {
-          "type": "liquid",
+        "text_Jqncym": {
+          "type": "text",
           "settings": {
-            "liquid": "<style>\n    .unique-rating-container-Wsx456 {\n        display: flex;\n        align-items: center;\n        justify-content: center;\n        font-size: 14px;\n        color: #333;\n        padding: 1px 0;\n        gap: px;\n        flex-wrap: nowrap;\n    }\n    \n    .unique-rating-label-Xyz789 {\n        font-weight: 700;\n        color: #333;\n        white-space: nowrap;\n    }\n    \n    .unique-rating-stars-Edc789 {\n        display: flex;\n        gap: 2px;\n    }\n    \n    .unique-rating-stars-Edc789 svg {\n        fill: #00B67A;\n        width: 16px;\n        height: 16px;\n    }\n    \n    .unique-rating-score-Abc123 {\n        font-weight: 700;\n        color: #000;\n        white-space: nowrap;\n    }\n    \n    .unique-rating-count-Def456 {\n        color: #666;\n        white-space: nowrap;\n    }\n    \n    @media (max-width: 768px) {\n        .unique-rating-container-Wsx456 {\n            font-size: 12px;\n            gap: 6px;\n        }\n        .unique-rating-stars-Edc789 svg {\n            width: 14px;\n            height: 14px;\n        }\n    }\n</style>\n\n<div class=\"unique-rating-container-Wsx456\">\n    <span class=\"unique-rating-label-Xyz789\">\"Eccellente\"</span>\n    <div class=\"unique-rating-stars-Edc789\">\n        <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\"><path d=\"M12 .587l3.668 7.431 8.144 1.18-5.906 5.434 1.391 8.079L12 18.896l-7.297 3.843 1.391-8.079-5.906-5.434 8.144-1.18z\"/></svg>\n        <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\"><path d=\"M12 .587l3.668 7.431 8.144 1.18-5.906 5.434 1.391 8.079L12 18.896l-7.297 3.843 1.391-8.079-5.906-5.434 8.144-1.18z\"/></svg>\n        <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\"><path d=\"M12 .587l3.668 7.431 8.144 1.18-5.906 5.434 1.391 8.079L12 18.896l-7.297 3.843 1.391-8.079-5.906-5.434 8.144-1.18z\"/></svg>\n        <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\"><path d=\"M12 .587l3.668 7.431 8.144 1.18-5.906 5.434 1.391 8.079L12 18.896l-7.297 3.843 1.391-8.079-5.906-5.434 8.144-1.18z\"/></svg>\n        <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\"><path d=\"M12 .587l3.668 7.431 8.144 1.18-5.906 5.434 1.391 8.079L12 18.896l-7.297 3.843 1.391-8.079-5.906-5.434 8.144-1.18z\"/></svg>\n    </div>\n    <span class=\"unique-rating-score-Abc123\">4.8/5</span>\n    <span class=\"unique-rating-count-Def456\">| 17.750+ recensioni</span>\n</div>"
+            "text": "<p><strong>Se ti svegli stanco ogni mattina, non è colpa tua. È colpa del tuo cuscino.</strong></p>"
           }
         },
         "description_KpteBp": {
@@ -616,11 +622,12 @@
       },
       "block_order": [
         "vendor_EGJq9m",
+        "liquid_zKAXhg",
         "title_WyQ6cm",
         "badges_WJmj4W",
         "price_a7waq4",
         "rating_PqtPqb",
-        "liquid_zKAXhg",
+        "text_Jqncym",
         "description_KpteBp",
         "variant_picker_BAUbtE",
         "quantity_selector_c73Km6",

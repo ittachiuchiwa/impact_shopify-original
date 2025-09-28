@@ -578,7 +578,15 @@
         "text_Jqncym": {
           "type": "text",
           "settings": {
-            "text": "<p><strong>Se ti svegli stanco ogni mattina, non è colpa tua. È colpa del tuo cuscino.</strong></p>"
+            "text": "<h6><strong>Se ti svegli stanco ogni mattina, non è colpa tua. È colpa del tuo cuscino.</strong></h6>"
+          }
+        },
+        "image_WDPAMF": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Votre_texte_de_paragraphe_10.jpg",
+            "alignment": "start",
+            "max_width": 500
           }
         },
         "description_KpteBp": {
@@ -628,6 +636,7 @@
         "price_a7waq4",
         "rating_PqtPqb",
         "text_Jqncym",
+        "image_WDPAMF",
         "description_KpteBp",
         "variant_picker_BAUbtE",
         "quantity_selector_c73Km6",
